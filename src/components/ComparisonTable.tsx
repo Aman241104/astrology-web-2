@@ -29,35 +29,37 @@ export default function ComparisonTable() {
             <div className="overflow-hidden border border-gold/10 rounded-[2.5rem] shadow-[0_20px_60px_rgba(0,100,0,0.1)] bg-white">
               <table className="min-w-full border-collapse">
                 <thead>
-                  <tr className="bg-emerald-50/50">
-                    <th className="py-6 px-6 text-left border-b-2 border-gold/10 text-emerald-900/40 font-bold uppercase tracking-[0.2em] text-[10px] md:text-xs">
+                  <tr className="bg-emerald-50/80">
+                    <th className="py-8 px-6 text-left border-b-2 border-gold/10 text-emerald-900/40 font-black uppercase tracking-[0.2em] text-[10px] md:text-xs">
                       Feature Comparison
                     </th>
-                    <th className="py-6 px-6 text-center border-b-2 border-gold bg-gold/5">
-                       <div className="text-emerald-900 font-bold text-sm md:text-lg uppercase tracking-tight italic">Hazrat Abdul Rehman</div>
+                    <th className="py-8 px-6 text-center border-b-2 border-gold bg-gold/10 relative overflow-hidden">
+                       <div className="absolute top-0 left-0 w-full h-1 bg-gold shadow-[0_0_15px_rgba(212,175,55,0.8)]" />
+                       <div className="text-emerald-900 font-black text-sm md:text-xl uppercase tracking-tighter italic drop-shadow-sm">Hazrat Abdul Rehman</div>
+                       <div className="text-[8px] md:text-[10px] text-emerald-800 font-bold uppercase tracking-[0.3em] mt-1">Recommended Specialist</div>
                     </th>
-                    <th className="py-6 px-6 text-center border-b-2 border-gray-200">
-                       <div className="text-gray-400 font-bold text-sm md:text-lg uppercase tracking-tight">Other Experts</div>
+                    <th className="py-8 px-6 text-center border-b-2 border-gray-200">
+                       <div className="text-gray-400 font-black text-sm md:text-xl uppercase tracking-tighter">Other Experts</div>
                     </th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gold/10">
                   {rows.map((row, i) => (
-                    <tr key={i} className="group hover:bg-emerald-50/30 transition-all duration-300">
-                      <td className="py-6 px-6 font-bold text-gray-700 text-xs md:text-base uppercase tracking-wide group-hover:text-emerald-900 transition-colors">
+                    <tr key={i} className="group hover:bg-emerald-50/50 transition-all duration-300">
+                      <td className="py-8 px-6 font-bold text-gray-700 text-xs md:text-lg uppercase tracking-tight group-hover:text-emerald-900 transition-colors">
                         {row.label}
                       </td>
-                      <td className="py-6 px-6 text-center bg-gold/[0.02] group-hover:bg-gold/[0.05] transition-colors">
-                        <div className="flex flex-col items-center gap-2">
-                          <div className="w-8 h-8 rounded-full bg-emerald-900 flex items-center justify-center shadow-[0_5px_15px_rgba(0,100,0,0.2)]">
-                            <CheckCircle2 className="text-gold" size={18} />
+                      <td className="py-8 px-6 text-center bg-gold/[0.03] group-hover:bg-gold/[0.08] transition-colors relative">
+                        <div className="flex flex-col items-center gap-3">
+                          <div className="w-10 h-10 rounded-full bg-emerald-900 flex items-center justify-center shadow-[0_8px_25px_rgba(0,100,0,0.3)] border-2 border-gold/30 group-hover:scale-110 transition-transform">
+                            <CheckCircle2 className="text-gold" size={22} />
                           </div>
-                          <span className="font-bold text-emerald-950 text-[10px] md:text-sm uppercase tracking-tighter">{row.hazrat}</span>
+                          <span className="font-black text-emerald-950 text-[10px] md:text-sm uppercase tracking-tighter">{row.hazrat}</span>
                         </div>
                       </td>
-                      <td className="py-6 px-6 text-center">
-                        <div className="flex flex-col items-center gap-2 opacity-30 group-hover:opacity-50 transition-opacity">
-                          <XCircle className="text-red-400" size={20} />
+                      <td className="py-8 px-6 text-center">
+                        <div className="flex flex-col items-center gap-3 opacity-30 group-hover:opacity-50 transition-opacity">
+                          <XCircle className="text-red-400" size={24} />
                           <span className="font-bold text-gray-500 text-[10px] md:text-sm uppercase tracking-tighter">{row.others}</span>
                         </div>
                       </td>

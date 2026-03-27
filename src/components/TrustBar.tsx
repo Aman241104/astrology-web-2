@@ -1,40 +1,40 @@
 "use client";
 
-import { MessageSquare, ShieldCheck, Headphones, ThumbsUp, Lock } from "lucide-react";
+import { CreditCard, ShieldCheck, Headphones, ThumbsUp, Lock } from "lucide-react";
 
 export default function TrustBar() {
   const trustItems = [
     {
       icon: (
         <div className="relative">
-          <MessageSquare className="text-emerald-950" size={32} />
-          <div className="absolute -bottom-1 -right-1 bg-gold rounded-full p-0.5 border border-white">
-            <Lock className="text-emerald-950" size={12} fill="currentColor" />
+          <CreditCard className="text-emerald-950" size={32} />
+          <div className="absolute -bottom-1 -right-1 bg-emerald-950 rounded-full p-0.5 border border-white">
+            <Lock className="text-gold" size={12} fill="currentColor" />
           </div>
         </div>
       ),
-      title: "Highly Private",
-      sub: "Secure & Confidential spiritual consultation.",
+      title: "Secure Communication",
+      sub: "100% Privacy Maintained",
     },
     {
       icon: <ShieldCheck className="text-emerald-950" size={32} />,
-      title: "Pure Halal",
-      sub: "Strictly Quranic and Sunnah-based remedies.",
+      title: "Pure Halal Methods",
+      sub: "Quranic & Sunnah Based",
     },
     {
       icon: <Headphones className="text-emerald-950" size={32} />,
-      title: "24/7 Service",
-      sub: "Available worldwide for your spiritual help.",
+      title: "24/7 Spiritual Help",
+      sub: "Always Here For You",
     },
     {
       icon: <ThumbsUp className="text-emerald-950" size={32} />,
-      title: "Trusted Expert",
-      sub: "20+ years of proven Rohani Ilaj success.",
+      title: "Trusted Worldwide",
+      sub: "Million of Happy Souls",
     }
   ];
 
   return (
-    <div className="bg-white py-12 md:py-20 border-t border-gray-100">
+    <div className="bg-white py-12 md:py-24 border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-10 md:gap-12 lg:gap-8">
           {trustItems.map((item, index) => (
@@ -45,17 +45,17 @@ export default function TrustBar() {
               )}
               
               {/* Icon Container */}
-              <div className="w-14 h-14 md:w-20 md:h-20 bg-gradient-to-br from-gold to-gold-600 rounded-[1.2rem] md:rounded-[2rem] flex items-center justify-center mb-4 md:mb-6 shadow-[0_10px_25px_rgba(212,175,55,0.2)] group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                <div className="scale-75 md:scale-110">
+              <div className="w-16 h-16 md:w-24 md:h-24 bg-gradient-to-br from-gold to-gold-600 rounded-full flex items-center justify-center mb-6 md:mb-8 shadow-[0_15px_35px_rgba(212,175,55,0.3)] group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 border-4 border-white">
+                <div className="scale-90 md:scale-125">
                   {item.icon}
                 </div>
               </div>
 
               {/* Text Content */}
-              <h3 className="text-emerald-900 font-bold text-sm md:text-xl uppercase tracking-tighter mb-1.5 md:mb-3 leading-tight transition-colors group-hover:text-gold">
+              <h3 className="text-emerald-950 font-black text-sm md:text-xl uppercase tracking-tighter mb-2 md:mb-4 leading-tight">
                 {item.title}
               </h3>
-              <p className="text-gray-500 font-medium text-[10px] md:text-sm leading-relaxed max-w-[140px] md:max-w-[240px]">
+              <p className="text-emerald-900/60 font-black text-[9px] md:text-xs uppercase tracking-widest leading-relaxed max-w-[140px] md:max-w-[240px]">
                 {item.sub}
               </p>
             </div>

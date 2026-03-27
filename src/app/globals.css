@@ -42,6 +42,17 @@ body {
   font-family: var(--font-sans);
 }
 
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 15s linear infinite;
+}
+
 @keyframes glow {
   0% { box-shadow: 0 0 5px rgba(212, 175, 55, 0.2); }
   50% { box-shadow: 0 0 20px rgba(212, 175, 55, 0.6); }

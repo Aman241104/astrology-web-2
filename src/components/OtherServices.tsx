@@ -1,6 +1,6 @@
 "use client";
 
-import { MessageCircle, Heart, UserCheck, Flame, Stars } from "lucide-react";
+import { MessageCircle, Heart, UserCheck, Flame, Sparkles } from "lucide-react";
 
 const otherServices = [
   {
@@ -17,7 +17,7 @@ const otherServices = [
   },
   {
     title: "Dua For Love Marriage",
-    icon: Stars,
+    icon: Sparkles,
   },
 ];
 

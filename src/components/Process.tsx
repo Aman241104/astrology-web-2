@@ -45,16 +45,21 @@ export default function Process() {
 
         <div className="flex overflow-x-auto pb-8 gap-6 md:grid md:grid-cols-3 md:gap-12 lg:gap-16 relative scrollbar-hide snap-x snap-mandatory px-4 -mx-4">
           {/* Connecting Line (Desktop) */}
-          <div className="hidden md:block absolute top-24 left-0 w-full h-1 bg-gradient-to-r from-gold/0 via-gold/20 to-gold/0 -z-10"></div>
+          <div className="hidden md:block absolute top-20 lg:top-24 left-[10%] right-[10%] h-[2px] bg-gradient-to-r from-transparent via-gold/30 to-transparent -z-10">
+            <div className="absolute inset-0 bg-gold/20 blur-[4px]" />
+          </div>
 
           {steps.map((s, i) => (
-            <div key={i} className="group flex flex-col items-center text-center p-8 md:p-12 rounded-[30px] md:rounded-[40px] bg-emerald-900/40 border border-white/5 hover:border-gold/30 hover:shadow-[0_40px_80px_rgba(0,0,0,0.3)] transition-all duration-500 hover:-translate-y-3 min-w-[280px] md:min-w-0 snap-center shadow-lg relative overflow-hidden">
-              <div className={`w-20 h-20 md:w-24 md:h-24 rounded-2xl md:rounded-3xl ${s.color} flex items-center justify-center mb-8 shadow-xl border-4 border-emerald-950 group-hover:rotate-12 group-hover:scale-110 transition-all text-white`}>
-                <s.icon size={36} />
+            <div key={i} className="group flex flex-col items-center text-center p-8 md:p-12 rounded-[30px] md:rounded-[40px] bg-emerald-950/40 border border-white/5 hover:border-gold/30 hover:shadow-[0_40px_80px_rgba(0,0,0,0.4)] transition-all duration-500 hover:-translate-y-3 min-w-[300px] md:min-w-0 snap-center shadow-lg relative overflow-hidden backdrop-blur-sm">
+              <div className="relative mb-8">
+                <div className="absolute inset-0 bg-gold/20 rounded-2xl md:rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className={`w-20 h-20 md:w-24 md:h-24 rounded-2xl md:rounded-3xl ${s.color} flex items-center justify-center relative z-10 shadow-2xl border-2 border-white/10 group-hover:rotate-[10deg] group-hover:scale-110 transition-all duration-500 text-white`}>
+                  <s.icon size={36} className="md:w-12 md:h-12" />
+                </div>
               </div>
-              <h3 className="font-serif text-xl md:text-3xl font-bold mb-4 md:mb-6 uppercase tracking-tighter leading-tight group-hover:text-gold transition-colors">{s.title}</h3>
-              <p className="text-sm md:text-xl text-white/70 font-medium leading-relaxed italic line-clamp-3 md:line-clamp-none">{s.desc}</p>
 
+              <h3 className="font-serif text-2xl md:text-3xl font-black text-white mb-4 md:mb-6 uppercase tracking-tighter leading-tight group-hover:text-gold transition-colors">{s.title}</h3>
+              <p className="text-base md:text-lg text-white/60 font-medium leading-relaxed italic line-clamp-3 md:line-clamp-none">{s.desc}</p>
               {/* Step Number Badge */}
               <div className="absolute top-2 right-4 text-4xl md:text-7xl font-black text-white/5 group-hover:text-gold/10 transition-colors pointer-events-none">
                 0{i + 1}

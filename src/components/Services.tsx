@@ -62,54 +62,63 @@ export default function Services() {
   }, []);
 
   return (
-    <section id="services" className="py-16 md:py-24 bg-white px-4">
-      <div ref={containerRef} className="max-w-7xl mx-auto">
-        <div className="text-center mb-10 md:mb-16">
-          <h2 className="font-serif text-3xl md:text-5xl font-bold text-emerald-900 mb-4">
+    <section id="services" className="py-16 md:py-32 bg-white px-4 relative overflow-hidden">
+      {/* Section Decoration */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[1000px] bg-emerald-50/50 rounded-full blur-[120px] -z-10" />
+      
+      <div ref={containerRef} className="max-w-7xl mx-auto relative z-10">
+        <div className="text-center mb-12 md:mb-24">
+          <div className="inline-block bg-emerald-100 text-emerald-900 px-6 py-2 rounded-full font-bold text-xs md:text-sm uppercase tracking-[0.3em] mb-6 border border-emerald-200">
+             Al-Quran Solutions
+          </div>
+          <h2 className="font-serif text-4xl md:text-6xl font-bold text-emerald-950 mb-6 tracking-tight">
             Our Spiritual Services
           </h2>
-          <div className="w-24 h-1 bg-gold mx-auto mb-6" />
-          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            Dedicated Islamic remedies for all your life problems. No black magic, 
-            only pure spiritual healing through the power of the Holy Quran.
+          <div className="w-24 h-1 bg-gold mx-auto mb-8 rounded-full" />
+          <p className="text-gray-600 max-w-2xl mx-auto text-lg md:text-xl font-medium italic">
+            "Seek help through patience and prayer." — Pure spiritual healing through 
+            the wisdom of the Holy Quran.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
           {services.map((service, idx) => (
             <div
               key={idx}
-              className="service-card group relative p-8 bg-white rounded-3xl border border-emerald-100 transition-all duration-500 hover:bg-emerald-900 hover:border-gold hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,100,0,0.3)] overflow-hidden"
+              className="service-card group relative p-8 md:p-10 bg-white rounded-[2.5rem] border border-emerald-100/80 transition-all duration-500 hover:bg-emerald-950 hover:border-gold hover:-translate-y-3 hover:shadow-[0_30px_70px_rgba(0,43,0,0.4)] overflow-hidden"
             >
               <div className="relative z-10">
-                <div className="w-16 h-16 bg-emerald-50 group-hover:bg-gold/20 rounded-2xl flex items-center justify-center mb-6 transition-all duration-500 group-hover:rotate-[10deg]">
-                  <service.icon size={32} className="text-emerald-900 group-hover:text-gold transition-colors" />
+                <div className="flex justify-between items-start mb-8">
+                  <div className="w-16 h-16 md:w-20 md:h-20 bg-emerald-50 group-hover:bg-gold/20 rounded-2xl flex items-center justify-center transition-all duration-500 group-hover:rotate-[15deg]">
+                    <service.icon size={36} className="text-emerald-900 group-hover:text-gold transition-colors" />
+                  </div>
+                  <span className="text-emerald-100 group-hover:text-gold/20 font-black text-4xl md:text-5xl transition-colors tracking-tighter">
+                    0{idx + 1}
+                  </span>
                 </div>
-                <h3 className="font-serif text-2xl font-bold text-emerald-900 group-hover:text-white mb-4 transition-colors">
+                
+                <h3 className="font-serif text-2xl md:text-3xl font-bold text-emerald-950 group-hover:text-white mb-5 transition-colors leading-tight">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 group-hover:text-white/80 mb-8 leading-relaxed transition-colors">
+                <p className="text-gray-600 group-hover:text-white/70 mb-10 leading-relaxed text-sm md:text-base font-medium transition-colors">
                   {service.desc}
                 </p>
-                <div className="flex items-center justify-between">
+                
+                <div className="flex items-center justify-between border-t border-emerald-50/50 group-hover:border-white/10 pt-6">
                   <a
-                    href={`https://wa.me/91XXXXXXXXXX?text=Hello%20Hazrat%20Sahab,%20I%20want%20to%20consult%20about%20${encodeURIComponent(service.title)}`}
-                    className="inline-flex items-center space-x-2 font-bold text-emerald-900 group-hover:text-gold transition-colors"
+                    href={`https://wa.me/91XXXXXXXXXX?text=Bismillah.%20Hello%20Hazrat%20Sahab,%20I%20want%20to%20consult%20about%20${encodeURIComponent(service.title)}`}
+                    className="inline-flex items-center space-x-3 font-black text-emerald-950 group-hover:text-gold transition-colors text-xs md:text-sm uppercase tracking-widest"
                   >
-                    <MessageCircle size={18} fill="currentColor" className="text-green-500" />
+                    <MessageCircle size={20} fill="currentColor" className="text-green-500 group-hover:scale-110 transition-transform" />
                     <span>Consult Now</span>
                   </a>
-                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <div className="w-8 h-8 bg-gold/20 rounded-full flex items-center justify-center text-gold">
-                      <Zap size={16} fill="currentColor" />
-                    </div>
-                  </div>
+                  <Zap size={20} className="text-gold opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-opacity" />
                 </div>
               </div>
               
               {/* Card Background Pattern */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-arabesque opacity-5 group-hover:opacity-10 transition-opacity" />
-              <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-gold/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+              <div className="absolute top-0 right-0 w-40 h-40 bg-arabesque opacity-[0.03] group-hover:opacity-[0.07] transition-opacity" />
+              <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-gold/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
             </div>
           ))}
         </div>
