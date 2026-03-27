@@ -6,19 +6,19 @@ const reviews = [
   {
     name: "Arhaan Malik",
     location: "London, UK",
-    text: "I was on the verge of divorce, but Hazrat Sahab's Wazifa changed everything. My wife returned, and now we are living happily. Truly a miracle!",
+    text: "I was on the verge of divorce, but Mohammed Arif Khan's Wazifa changed everything. My wife returned, and now we are living happily. Truly a miracle!",
     stars: 5,
   },
   {
     name: "Sana Khan",
     location: "Dubai, UAE",
-    text: "My parents were against my love marriage. After consulting Maulana Sahab, they themselves agreed within 15 days. Thank you so much!",
+    text: "My parents were against my love marriage. After consulting Mohammed Arif Khan, they themselves agreed within 15 days. Thank you so much!",
     stars: 5,
   },
   {
     name: "Faiz Ahmed",
     location: "Mumbai, India",
-    text: "Lost my job and my love at the same time. Hazrat Sahab gave me a special Dua, and within a week, I got a new job and my partner back.",
+    text: "Lost my job and my love at the same time. Mohammed Arif Khan gave me a special Dua, and within a week, I got a new job and my partner back.",
     stars: 5,
   },
 ];
@@ -72,7 +72,7 @@ export default function Testimonials() {
             Join 50,000+ happy clients. Your solution is just a call away.
           </p>
           <a
-            href="tel:+91XXXXXXXXXX"
+            href="tel:+919784412832"
             className="inline-block bg-gold hover:bg-gold-600 text-emerald-950 px-10 py-4 rounded-full font-bold text-lg shadow-xl transition-all hover:scale-105"
           >
             Get a Free Consultation

@@ -30,7 +30,7 @@ export default function TrustHeader() {
             <img 
               src="https://images.unsplash.com/photo-1590059378132-7a083436098c?q=80&w=200&auto=format&fit=crop" 
               className="w-full h-full object-cover rounded-full" 
-              alt="Hazrat Profile"
+              alt="Mohammed Arif Khan Profile"
             />
           </div>
           <div>
@@ -42,7 +42,7 @@ export default function TrustHeader() {
               <span className="text-emerald-900 text-[10px] font-black uppercase tracking-tighter ml-1">World Famous Specialist</span>
             </div>
             <h2 className="text-2xl md:text-4xl font-black text-emerald-900 uppercase tracking-tighter leading-none mb-2">
-              HAZRAT <span className="text-gold">ABDUL REHMAN</span>
+              MOHAMMED <span className="text-gold">ARIF KHAN</span>
             </h2>
             <div className="inline-block bg-gold/10 border border-gold/20 px-3 py-1 rounded-lg">
               <p className="text-[10px] md:text-xs font-black text-emerald-900 uppercase tracking-widest">
@@ -73,8 +73,8 @@ export default function TrustHeader() {
             <span className="text-xs font-black text-emerald-900 uppercase tracking-widest italic">Contact Anytime</span>
             <span className="bg-gold text-emerald-950 text-[10px] font-black px-2 py-0.5 rounded">24/7 LIVE</span>
           </div>
-          <a href="tel:+91XXXXXXXXXX" className="text-2xl md:text-4xl font-black text-emerald-900 tracking-tighter hover:text-gold transition-colors">
-            +91 XXXXX XXXXX
+          <a href="tel:+919784412832" className="text-2xl md:text-4xl font-black text-emerald-900 tracking-tighter hover:text-gold transition-colors">
+            +91-9784412832
           </a>
           <div className="flex items-center gap-3 mt-1">
             <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" className="h-5 grayscale opacity-70" />

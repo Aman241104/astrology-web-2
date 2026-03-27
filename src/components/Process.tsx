@@ -4,14 +4,14 @@ import { PhoneCall, MessageSquare, HeartHandshake } from "lucide-react";
 
 const steps = [
   {
-    title: "1. Contact Maulana Ji",
-    desc: "Call or Message on WhatsApp to share your problems with Hazrat Sahab. Initial consultation is private.",
+    title: "1. Contact Mohammed Arif Khan",
+    desc: "Call or Message on WhatsApp to share your problems with Mohammed Arif Khan. Initial consultation is private.",
     icon: PhoneCall,
     color: "bg-emerald-800"
   },
   {
     title: "2. Spiritual Analysis",
-    desc: "Hazrat Sahab performs a detailed spiritual analysis (Istikhara) to identify the root cause of your problem.",
+    desc: "Mohammed Arif Khan performs a detailed spiritual analysis (Istikhara) to identify the root cause of your problem.",
     icon: MessageSquare,
     color: "bg-gold"
   },
@@ -72,4 +72,3 @@ export default function Process() {
     </section>
   );
 }
-

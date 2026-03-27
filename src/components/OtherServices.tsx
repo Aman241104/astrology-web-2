@@ -45,7 +45,7 @@ export default function OtherServices() {
                 {service.title}
               </h3>
               <a
-                href={`https://wa.me/91XXXXXXXXXX?text=Hello%20Hazrat%20Sahab,%20I%20want%20to%20consult%20about%20${encodeURIComponent(service.title)}`}
+                href={`https://wa.me/919784412832?text=Hello%20Mohammed%20Arif%20Khan,%20I%20want%20to%20consult%20about%20${encodeURIComponent(service.title)}`}
                 className="flex items-center space-x-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-sm transition-all active:scale-95"
               >
                 <MessageCircle size={16} fill="currentColor" />

@@ -14,7 +14,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Hazrat Abdul Rehman Khan | Islamic Spiritual Healer & Love Problem Specialist",
+  title: "Mohammed Arif Khan | Islamic Spiritual Healer & Love Problem Specialist",
   description: "Get Pure Halal Islamic spiritual remedies for love marriage, husband-wife disputes, and family problems. 24/7 available for Rohani Ilaj.",
 };
 
@@ -26,10 +26,10 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Hazrat Abdul Rehman Khan - Islamic Spiritual Healer",
+    "name": "Mohammed Arif Khan - Islamic Spiritual Healer",
     "description": "Expert Islamic spiritual solutions for love problems, marriage disputes, and family issues. Pure Halal and Quranic remedies.",
     "url": "https://yourdomain.com",
-    "telephone": "+91XXXXXXXXXX",
+    "telephone": "+919784412832",
     "areaServed": ["IN", "UK", "US", "AE", "CA"],
     "priceRange": "$$",
     "address": {

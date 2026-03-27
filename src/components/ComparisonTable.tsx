@@ -35,7 +35,7 @@ export default function ComparisonTable() {
                     </th>
                     <th className="py-8 px-6 text-center border-b-2 border-gold bg-gold/10 relative overflow-hidden">
                        <div className="absolute top-0 left-0 w-full h-1 bg-gold shadow-[0_0_15px_rgba(212,175,55,0.8)]" />
-                       <div className="text-emerald-900 font-black text-sm md:text-xl uppercase tracking-tighter italic drop-shadow-sm">Hazrat Abdul Rehman</div>
+                       <div className="text-emerald-900 font-black text-sm md:text-xl uppercase tracking-tighter italic drop-shadow-sm">Mohammed Arif Khan</div>
                        <div className="text-[8px] md:text-[10px] text-emerald-800 font-bold uppercase tracking-[0.3em] mt-1">Recommended Specialist</div>
                     </th>
                     <th className="py-8 px-6 text-center border-b-2 border-gray-200">

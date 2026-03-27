@@ -22,16 +22,16 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white">
       <Header />
-      <TrustHeader />
       <Hero />
-      <ServiceIconBar />
-      <TrustBar />
-      <Services />
       <LoveProblemBanner />
+      <Services />
+      <TrustHeader />
+      <TrustBar />
+      <WhyChoose />
+      <ServiceIconBar />
       <ServiceCardsDetailed />
       <OtherServices />
       <Process />
-      <WhyChoose />
       <ComparisonTable />
       <About />
       <Testimonials />

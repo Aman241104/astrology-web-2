@@ -42,8 +42,8 @@ export default function Header() {
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <Link href="/" className="flex flex-col group">
-            <span className="font-serif text-xl md:text-3xl font-black text-white group-hover:text-gold transition-colors duration-300">
-              Hazrat <span className="text-gold group-hover:text-white transition-colors duration-300">Abdul Rehman</span>
+            <span className="font-serif text-xl md:text-2xl lg:text-3xl font-black text-white group-hover:text-gold transition-colors duration-300">
+              Mohammed <span className="text-gold group-hover:text-white transition-colors duration-300">Arif Khan</span>
             </span>
             <div className="flex items-center gap-2">
               <div className="h-[1px] w-4 bg-gold/50" />
@@ -62,14 +62,14 @@ export default function Header() {
 
           <div className="flex items-center space-x-3 md:space-x-5">
             <a
-              href="tel:+91XXXXXXXXXX"
+              href="tel:+919784412832"
               className="flex items-center space-x-2 bg-gold hover:bg-white text-emerald-950 px-4 py-2.5 md:px-7 md:py-3.5 rounded-xl font-black transition-all shadow-[0_5px_15px_rgba(212,175,55,0.3)] text-[11px] md:text-sm uppercase tracking-wider group"
             >
               <Phone size={16} fill="currentColor" className="group-hover:scale-110 transition-transform" />
               <span className="hidden sm:inline">Call Now</span>
             </a>
             <a
-              href="https://wa.me/91XXXXXXXXXX"
+              href="https://wa.me/919784412832"
               className="bg-green-500 hover:bg-green-400 text-white p-2.5 md:p-3.5 rounded-xl shadow-lg transition-all flex items-center justify-center hover:rotate-[10deg] active:scale-90"
               aria-label="WhatsApp"
             >

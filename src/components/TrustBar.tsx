@@ -13,49 +13,49 @@ export default function TrustBar() {
           </div>
         </div>
       ),
-      title: "Secure Communication",
-      sub: "100% Privacy Maintained",
+      title: "100% Privacy",
+      sub: "Full Confidentiality Guaranteed",
     },
     {
       icon: <ShieldCheck className="text-emerald-950" size={32} />,
-      title: "Pure Halal Methods",
-      sub: "Quranic & Sunnah Based",
+      title: "Pure Halal",
+      sub: "Quranic & Sunnah Solutions",
     },
     {
       icon: <Headphones className="text-emerald-950" size={32} />,
-      title: "24/7 Spiritual Help",
-      sub: "Always Here For You",
+      title: "24/7 Support",
+      sub: "Always Available Globally",
     },
     {
       icon: <ThumbsUp className="text-emerald-950" size={32} />,
-      title: "Trusted Worldwide",
-      sub: "Million of Happy Souls",
+      title: "Trusted Expert",
+      sub: "Millions of Success Stories",
     }
   ];
 
   return (
-    <div className="bg-white py-12 md:py-24 border-t border-gray-100">
+    <div className="bg-white py-8 md:py-16 border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-10 md:gap-12 lg:gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8 md:gap-10 lg:gap-8">
           {trustItems.map((item, index) => (
-            <div key={index} className="relative flex flex-col items-center text-center px-2 md:px-6 group">
+            <div key={index} className="relative flex flex-col items-center text-center px-2 md:px-6 group transition-all hover:-translate-y-1">
               {/* Vertical Dashed Separator (Desktop) */}
               {index < trustItems.length - 1 && (
-                <div className="hidden lg:block absolute -right-4 top-1/2 -translate-y-1/2 h-24 border-r-2 border-dashed border-gold/20"></div>
+                <div className="hidden lg:block absolute -right-4 top-1/2 -translate-y-1/2 h-20 border-r-2 border-dashed border-gold/20"></div>
               )}
               
               {/* Icon Container */}
-              <div className="w-16 h-16 md:w-24 md:h-24 bg-gradient-to-br from-gold to-gold-600 rounded-full flex items-center justify-center mb-6 md:mb-8 shadow-[0_15px_35px_rgba(212,175,55,0.3)] group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 border-4 border-white">
-                <div className="scale-90 md:scale-125">
+              <div className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-gold to-gold-600 rounded-full flex items-center justify-center mb-4 md:mb-6 shadow-[0_15px_30px_rgba(212,175,55,0.3)] group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 border-4 border-white">
+                <div className="scale-75 md:scale-100">
                   {item.icon}
                 </div>
               </div>
 
               {/* Text Content */}
-              <h3 className="text-emerald-950 font-black text-sm md:text-xl uppercase tracking-tighter mb-2 md:mb-4 leading-tight">
+              <h3 className="text-emerald-950 font-black text-sm md:text-lg uppercase tracking-tighter mb-1 md:mb-2 leading-tight">
                 {item.title}
               </h3>
-              <p className="text-emerald-900/60 font-black text-[9px] md:text-xs uppercase tracking-widest leading-relaxed max-w-[140px] md:max-w-[240px]">
+              <p className="text-emerald-900/60 font-black text-[8px] md:text-[10px] uppercase tracking-widest leading-relaxed max-w-[120px] md:max-w-[200px]">
                 {item.sub}
               </p>
             </div>

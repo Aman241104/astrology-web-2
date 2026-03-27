@@ -13,7 +13,7 @@ export default function ContactForm() {
               Priority Callback
             </div>
             <h2 className="font-serif text-4xl md:text-6xl font-black mb-8 leading-tight tracking-tighter">
-              Talk to <br className="hidden md:block" /> Hazrat Sahab
+              Talk to <br className="hidden md:block" /> Mohammed Arif Khan
             </h2>
             <p className="text-white/70 mb-12 text-lg md:text-xl font-medium leading-relaxed italic border-l-4 border-gold pl-6">
               "Every problem has a Quranic solution." Share your worry privately and get 
@@ -26,7 +26,7 @@ export default function ContactForm() {
                 </div>
                 <div>
                   <p className="text-xs uppercase tracking-[0.2em] text-white/40 font-black mb-1">Call Us 24/7</p>
-                  <p className="text-2xl md:text-3xl font-black tracking-tighter text-gold">+91 XXXXX XXXXX</p>
+                  <p className="text-2xl md:text-3xl font-black tracking-tighter text-gold">+91-9784412832</p>
                 </div>
               </div>
             </div>

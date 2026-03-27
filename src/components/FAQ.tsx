@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: "Can you help with inter-caste marriage problems?",
-    answer: "Yes, Hazrat Sahab specializes in resolving hurdles related to inter-caste and love marriages, helping you gain parental approval through spiritual means.",
+    answer: "Yes, Mohammed Arif Khan specializes in resolving hurdles related to inter-caste and love marriages, helping you gain parental approval through spiritual means.",
     icon: Heart
   },
   {
