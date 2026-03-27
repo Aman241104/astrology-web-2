@@ -6,7 +6,6 @@ import TrustBar from "@/components/TrustBar";
 import Services from "@/components/Services";
 import LoveProblemBanner from "@/components/LoveProblemBanner";
 import ServiceCardsDetailed from "@/components/ServiceCardsDetailed";
-import OtherServices from "@/components/OtherServices";
 import Process from "@/components/Process";
 import WhyChoose from "@/components/WhyChoose";
 import ComparisonTable from "@/components/ComparisonTable";
@@ -16,7 +15,6 @@ import ContactForm from "@/components/ContactForm";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
-import SuccessToast from "@/components/SuccessToast";
 
 export default function Home() {
   return (
@@ -30,7 +28,6 @@ export default function Home() {
       <WhyChoose />
       <ServiceIconBar />
       <ServiceCardsDetailed />
-      <OtherServices />
       <Process />
       <ComparisonTable />
       <About />
@@ -39,7 +36,6 @@ export default function Home() {
       <FAQ />
       <Footer />
       <FloatingWhatsApp />
-      <SuccessToast />
     </main>
   );
 }

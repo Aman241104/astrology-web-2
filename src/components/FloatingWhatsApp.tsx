@@ -13,8 +13,8 @@ export default function FloatingWhatsApp() {
         Free Consultation
       </div>
       <div className="relative">
-        <div className="absolute inset-0 bg-green-500 rounded-full animate-ping opacity-75" />
-        <div className="relative bg-green-500 text-white p-4 rounded-full shadow-2xl flex items-center justify-center border-4 border-white">
+        <div className="absolute inset-0 bg-[#25D366] rounded-full animate-ping opacity-75" />
+        <div className="relative bg-[#25D366] text-white p-4 rounded-full shadow-2xl flex items-center justify-center border-4 border-white">
           <MessageCircle size={32} fill="currentColor" />
         </div>
       </div>

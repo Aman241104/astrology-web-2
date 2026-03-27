@@ -16,8 +16,8 @@ const faqs = [
     icon: Clock
   },
   {
-    question: "Do you practice Black Magic (Sifli Ilm)?",
-    answer: "No. We strictly follow Islamic principles. All our remedies are based on the Holy Quran and Sunnah. We do not engage in any form of black magic or haram practices.",
+    question: "Are your methods Halal and Quranic?",
+    answer: "Yes. We strictly follow Islamic principles. All our remedies are based on the Holy Quran and Sunnah. We do not engage in any form of prohibited or harmful practices.",
     icon: CircleHelp
   },
   {
