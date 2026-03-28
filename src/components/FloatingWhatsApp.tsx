@@ -1,16 +1,19 @@
 "use client";
 
 import { MessageCircle } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function FloatingWhatsApp() {
+  const { t } = useLanguage();
+
   return (
     <a
       href="https://wa.me/919784412832?text=Bismillah.%20Hello%20Mohammed%20Arif%20Khan,%20I%20am%20facing%20some%20problems%20and%20need%20your%20spiritual%20guidance."
-      className="fixed bottom-6 right-6 z-[60] group flex items-center space-x-3 transition-transform hover:scale-110 active:scale-95"
+      className="fixed bottom-6 right-6 z-[60] group flex items-center space-x-3 transition-transform hover:scale-110 active:scale-95 rtl:right-auto rtl:left-6 rtl:space-x-reverse"
       aria-label="Chat on WhatsApp"
     >
-      <div className="bg-emerald-950 text-gold px-6 py-3 rounded-2xl font-black shadow-2xl opacity-0 group-hover:opacity-100 transition-all -translate-x-4 group-hover:translate-x-0 hidden md:block border border-gold/20 uppercase tracking-widest text-xs whitespace-nowrap">
-        Free Consultation
+      <div className="bg-emerald-950 text-gold px-6 py-3 rounded-2xl font-black shadow-2xl opacity-0 group-hover:opacity-100 transition-all -translate-x-4 group-hover:translate-x-0 hidden md:block border border-gold/20 uppercase tracking-widest text-xs whitespace-nowrap rtl:translate-x-4 rtl:group-hover:translate-x-0">
+        {t("common.free_consultation")}
       </div>
       <div className="relative">
         <div className="absolute inset-0 bg-[#25D366] rounded-full animate-ping opacity-75" />

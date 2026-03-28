@@ -1,19 +1,22 @@
 "use client";
 
 import { Heart, Briefcase, Users, UserX, TrendingUp, Sparkles } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function ServiceIconBar() {
+  const { t } = useLanguage();
+
   const items = [
-    { label: "Love", icon: Heart, color: "text-red-500" },
-    { label: "Career", icon: Briefcase, color: "text-amber-600" },
-    { label: "Marriage", icon: Users, color: "text-blue-500" },
-    { label: "Breakup", icon: UserX, color: "text-rose-600" },
-    { label: "Business", icon: TrendingUp, color: "text-emerald-600" },
-    { label: "Healer", icon: Sparkles, color: "text-purple-500" },
+    { label: t("icons.love"), icon: Heart, color: "text-red-500" },
+    { label: t("icons.career"), icon: Briefcase, color: "text-amber-600" },
+    { label: t("icons.marriage"), icon: Users, color: "text-blue-500" },
+    { label: t("icons.breakup"), icon: UserX, color: "text-rose-600" },
+    { label: t("icons.business"), icon: TrendingUp, color: "text-emerald-600" },
+    { label: t("icons.healer"), icon: Sparkles, color: "text-purple-500" },
   ];
 
   return (
-    <section className="bg-emerald-900 py-8 md:py-12 relative overflow-hidden">
+    <section className="bg-emerald-900 py-6 md:py-8 relative overflow-hidden">
       {/* Bokeh Background Effect */}
       <div className="absolute inset-0 pointer-events-none opacity-25">
         <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-white rounded-full blur-3xl animate-pulse" />

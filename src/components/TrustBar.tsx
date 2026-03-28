@@ -34,7 +34,7 @@ export default function TrustBar() {
   ];
 
   return (
-    <div className="bg-white py-6 md:py-10 border-t border-gray-100">
+    <div className="bg-white py-4 md:py-6 border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8 md:gap-10 lg:gap-8">
           {trustItems.map((item, index) => (

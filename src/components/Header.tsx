@@ -1,12 +1,16 @@
 "use client";
 
 import Link from "next/link";
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone, MessageCircle, Globe, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
+import { useLanguage } from "@/context/LanguageContext";
+import { Language } from "@/lib/translations";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
+  const [isLangOpen, setIsLangOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,7 +20,11 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const tagline = "!! फ़ोन उठाओ समस्या बताओ, समाधान पाओ !! | 24/7 Available | Islamic Spiritual Specialist";
+  const languages = [
+    { code: "en", label: "English" },
+    { code: "hi", label: "हिंदी" },
+    { code: "ur", label: "اردو" },
+  ];
 
   return (
     <>
@@ -24,11 +32,11 @@ export default function Header() {
       <div className="bg-gold text-emerald-950 py-2.5 px-4 z-[70] fixed top-0 left-0 right-0 h-10 flex items-center overflow-hidden border-b border-black/5 shadow-sm">
         <div className="md:hidden w-full overflow-hidden whitespace-nowrap">
           <div className="animate-marquee font-black uppercase tracking-wider text-[11px]">
-            {tagline} &nbsp;&nbsp;&nbsp;&nbsp; {tagline}
+            {t("nav.tagline")} &nbsp;&nbsp;&nbsp;&nbsp; {t("nav.tagline")}
           </div>
         </div>
         <div className="hidden md:flex w-full justify-center items-center font-black uppercase tracking-widest text-xs lg:text-sm">
-          {tagline}
+          {t("nav.tagline")}
         </div>
       </div>
 
@@ -46,7 +54,7 @@ export default function Header() {
               "font-serif text-xl md:text-2xl lg:text-3xl font-black transition-colors duration-300",
               isScrolled ? "text-white" : "text-emerald-950"
             )}>
-              Mohammed <span className="text-gold">Arif Khan</span>
+              {t("hero.mohammed")} <span className="text-gold">{t("hero.arif_khan")}</span>
             </span>
             <div className="flex items-center gap-2">
               <div className="h-[1px] w-4 bg-gold/50" />
@@ -54,7 +62,7 @@ export default function Header() {
                 "text-[9px] md:text-[11px] tracking-[0.3em] uppercase font-bold",
                 isScrolled ? "text-white/60" : "text-emerald-900/60"
               )}>
-                Spiritual Healer
+                {t("nav.spiritual_healer")}
               </span>
             </div>
           </Link>
@@ -63,19 +71,61 @@ export default function Header() {
             "hidden lg:flex items-center space-x-10 text-[13px] uppercase tracking-[0.15em] font-bold transition-colors",
             isScrolled ? "text-white/80" : "text-emerald-900/80"
           )}>
-            <Link href="/" className="hover:text-gold transition-all relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-gold hover:after:w-full after:transition-all">Home</Link>
-            <Link href="#services" className="hover:text-gold transition-all relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-gold hover:after:w-full after:transition-all">Services</Link>
-            <Link href="#about" className="hover:text-gold transition-all relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-gold hover:after:w-full after:transition-all">About</Link>
-            <Link href="#testimonials" className="hover:text-gold transition-all relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-gold hover:after:w-full after:transition-all">Stories</Link>
+            <Link href="/" className="hover:text-gold transition-all relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-gold hover:after:w-full after:transition-all">{t("common.home")}</Link>
+            <Link href="#services" className="hover:text-gold transition-all relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-gold hover:after:w-full after:transition-all">{t("common.services")}</Link>
+            <Link href="#about" className="hover:text-gold transition-all relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-gold hover:after:w-full after:transition-all">{t("common.about")}</Link>
+            <Link href="#testimonials" className="hover:text-gold transition-all relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-gold hover:after:w-full after:transition-all">{t("common.stories")}</Link>
           </nav>
 
           <div className="flex items-center space-x-3 md:space-x-5">
+            {/* Language Switcher */}
+            <div className="relative">
+              <button
+                onClick={() => setIsLangOpen(!isLangOpen)}
+                className={cn(
+                  "flex items-center space-x-1 md:space-x-2 px-3 py-2 md:px-4 md:py-2.5 rounded-xl font-bold transition-all border shadow-sm text-[10px] md:text-xs uppercase tracking-widest",
+                  isScrolled 
+                    ? "bg-white/10 text-white border-white/20 hover:bg-white/20" 
+                    : "bg-emerald-50 text-emerald-900 border-emerald-100 hover:bg-emerald-100"
+                )}
+              >
+                <Globe size={14} className="text-gold" />
+                <span>{languages.find(l => l.code === language)?.label}</span>
+                <ChevronDown size={12} className={cn("transition-transform", isLangOpen && "rotate-180")} />
+              </button>
+
+              {isLangOpen && (
+                <div className={cn(
+                  "absolute top-full mt-2 right-0 w-32 rounded-xl shadow-2xl border overflow-hidden z-[80] backdrop-blur-xl transition-all animate-in fade-in slide-in-from-top-2",
+                  isScrolled ? "bg-emerald-950 border-white/10" : "bg-white border-emerald-50"
+                )}>
+                  {languages.map((lang) => (
+                    <button
+                      key={lang.code}
+                      onClick={() => {
+                        setLanguage(lang.code as Language);
+                        setIsLangOpen(false);
+                      }}
+                      className={cn(
+                        "w-full px-4 py-3 text-left text-xs font-bold uppercase tracking-widest transition-colors",
+                        language === lang.code 
+                          ? "bg-gold text-emerald-950" 
+                          : isScrolled ? "text-white/80 hover:bg-white/10" : "text-emerald-900/80 hover:bg-emerald-50"
+                      )}
+                    >
+                      {lang.label}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+
             <a
               href="tel:+919784412832"
               className="flex items-center space-x-2 bg-emerald-950 hover:bg-gold text-white hover:text-emerald-950 px-4 py-2.5 md:px-7 md:py-3.5 rounded-xl font-black transition-all shadow-lg text-[11px] md:text-sm uppercase tracking-wider group"
             >
               <Phone size={16} fill="currentColor" className="group-hover:scale-110 transition-transform" />
-              <span className="hidden sm:inline">Call Now</span>
+              <span className="hidden sm:inline">{t("common.call_now")}</span>
             </a>
             <a
               href="https://wa.me/919784412832"

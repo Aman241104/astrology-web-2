@@ -18,12 +18,15 @@ export const metadata: Metadata = {
   description: "Get Pure Halal Islamic spiritual remedies for love marriage, husband-wife disputes, and family problems. 24/7 available for Rohani Ilaj.",
 };
 
+import { LanguageProvider } from "@/context/LanguageContext";
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   const jsonLd = {
+    // ... rest of jsonLd
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Mohammed Arif Khan - Islamic Spiritual Healer",
@@ -49,7 +52,9 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );
