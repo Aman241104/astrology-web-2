@@ -13,7 +13,7 @@ export default function FloatingWhatsApp() {
       aria-label="Chat on WhatsApp"
     >
       <div className="bg-emerald-950 text-gold px-6 py-3 rounded-2xl font-black shadow-2xl opacity-0 group-hover:opacity-100 transition-all -translate-x-4 group-hover:translate-x-0 hidden md:block border border-gold/20 uppercase tracking-widest text-xs whitespace-nowrap rtl:translate-x-4 rtl:group-hover:translate-x-0">
-        {t("common.free_consultation")}
+        {t("common.whatsapp_now")}
       </div>
       <div className="relative">
         <div className="absolute inset-0 bg-[#25D366] rounded-full animate-ping opacity-75" />
