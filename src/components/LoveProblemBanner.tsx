@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { MessageCircle, Heart, Star, Phone } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -24,9 +25,11 @@ export default function LoveProblemBanner() {
                 href="https://wa.me/919784412832?text=Bismillah. I need help with my love life."
                 className="block relative aspect-[4/3] rounded-[2.5rem] md:rounded-[3.5rem] overflow-hidden border-[6px] md:border-[10px] border-gold shadow-[0_40px_100px_rgba(0,0,0,0.8)] scale-100 group-hover:scale-[1.02] transition-all duration-700 cursor-pointer"
               >
-                 <img 
+                 <Image 
                    src="/love-banner.png" 
                    alt="Love Problem Solution Specialist" 
+                   fill
+                   sizes="(max-width: 768px) 100vw, 500px"
                    className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110"
                  />
                  <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/70 via-transparent to-transparent" />

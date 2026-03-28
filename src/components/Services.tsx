@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { MessageCircle, Heart, Users, Home, UserCheck, ShieldCheck, Zap, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -74,10 +75,12 @@ export default function Services() {
             >
               {/* Image Container with Overlay */}
               <div className="relative h-64 overflow-hidden">
-                <img 
+                <Image 
                   src={service.img} 
                   alt={service.title} 
-                  className="w-full h-full object-cover transition-transform duration-1000 md:group-hover:scale-110" 
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-1000 md:group-hover:scale-110" 
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/80 via-emerald-950/20 to-transparent opacity-60 md:group-hover:opacity-90 transition-opacity" />
                 

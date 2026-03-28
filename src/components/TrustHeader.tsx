@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Star, Phone, CheckCircle2 } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -23,11 +24,14 @@ export default function TrustHeader() {
       <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col lg:flex-row items-center justify-between gap-8">
         {/* Left: Brand Profile */}
         <div className="flex items-center gap-4 text-center lg:text-left rtl:lg:text-right">
-          <div className="w-20 h-20 md:w-24 md:h-24 bg-emerald-900 rounded-full flex items-center justify-center p-1 border-4 border-gold shadow-xl shrink-0 overflow-hidden">
-            <img 
+          <div className="w-20 h-20 md:w-24 md:h-24 bg-emerald-900 rounded-full flex items-center justify-center p-1 border-4 border-gold shadow-xl shrink-0 overflow-hidden relative">
+            <Image 
               src="/profile-circle.png" 
-              className="w-full h-full object-cover rounded-full" 
+              fill
+              sizes="(max-width: 768px) 80px, 96px"
+              className="object-cover rounded-full" 
               alt="Mohammed Arif Khan Profile"
+              priority
             />
           </div>
           <div>
@@ -56,7 +60,15 @@ export default function TrustHeader() {
           </p>
           <div className="flex flex-wrap justify-center gap-2">
             {flags.map((flag, idx) => (
-              <img key={idx} src={flag.url} alt={flag.country} className="h-5 md:h-7 w-auto shadow-sm rounded-sm" />
+              <div key={idx} className="relative h-5 w-7 md:h-7 md:w-10 shadow-sm rounded-sm overflow-hidden">
+                <Image 
+                  src={flag.url} 
+                  alt={flag.country} 
+                  fill
+                  sizes="40px"
+                  className="object-cover"
+                />
+              </div>
             ))}
           </div>
           <div className="bg-emerald-900 text-white px-4 py-1.5 rounded-md text-[10px] font-bold uppercase tracking-[0.2em] shadow-lg border-b-4 border-gold/50">
@@ -74,7 +86,13 @@ export default function TrustHeader() {
             +91-9784412832
           </a>
           <div className="flex items-center gap-3 mt-1">
-            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" className="h-5 grayscale opacity-70" />
+            <Image 
+              src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" 
+              alt="Google" 
+              width={92}
+              height={30}
+              className="h-5 w-auto grayscale opacity-70" 
+            />
             <div className="flex gap-0.5">
               {[1, 2, 3, 4, 5].map((i) => (
                 <Star key={i} size={14} fill="#D4AF37" className="text-gold" />

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { CheckCircle2, MessageCircle, Phone } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -12,11 +13,14 @@ export default function About() {
     <section id="about" className="py-8 md:py-12 bg-emerald-50/50 px-4 overflow-hidden relative">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10 lg:gap-16 relative z-10">
         <div className="flex-1 relative group">
-          <div className="relative z-10 rounded-[2.5rem] md:rounded-[3rem] overflow-hidden shadow-[0_40px_100px_rgba(0,43,0,0.15)] border-[8px] md:border-[12px] border-white transition-transform duration-700 group-hover:scale-[1.01]">
-            <img
+          <div className="relative z-10 rounded-[2.5rem] md:rounded-[3rem] overflow-hidden shadow-[0_40px_100px_rgba(0,43,0,0.15)] border-[8px] md:border-[12px] border-white transition-transform duration-700 group-hover:scale-[1.01] aspect-[4/5] min-h-[400px]">
+            <Image
               src="/specialist.png"
-              alt="Mohammed Arif Khan"
-              className="w-full h-auto grayscale-[15%] group-hover:grayscale-0 transition-all duration-700 object-cover min-h-[400px]"
+              alt="Mohammed Arif Khan - Astrology Specialist"
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+              className="grayscale-[15%] group-hover:grayscale-0 transition-all duration-700 object-cover"
+              priority
             />
             <div className="absolute inset-0 bg-emerald-900/5 group-hover:bg-transparent transition-colors" />
             

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { Phone, MessageCircle, Star, ShieldCheck, Zap, Heart } from "lucide-react";
@@ -109,8 +110,13 @@ export default function Hero() {
           <div className="mt-12 flex items-center gap-6 py-6 border-t border-emerald-50 w-full lg:w-auto">
              <div className="flex -space-x-3">
                 {[1,2,3,4].map(i => (
-                  <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-emerald-100 flex items-center justify-center overflow-hidden shadow-sm">
-                    <img src={`https://i.pravatar.cc/100?img=${i+10}`} alt="client" />
+                  <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-emerald-100 flex items-center justify-center overflow-hidden shadow-sm relative">
+                    <Image 
+                      src={`https://i.pravatar.cc/100?img=${i+10}`} 
+                      alt="client" 
+                      fill
+                      className="object-cover"
+                    />
                   </div>
                 ))}
              </div>
@@ -132,9 +138,12 @@ export default function Hero() {
             
             {/* Main Specialist Image */}
             <div className="w-full h-full rounded-[4rem] overflow-hidden border-[12px] border-white shadow-2xl relative">
-              <img 
+              <Image 
                 src="/hero-image.png" 
                 alt="Mohammed Arif Khan" 
+                fill
+                priority
+                sizes="(max-width: 768px) 100vw, 500px"
                 className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-all duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/40 via-transparent to-transparent" />
