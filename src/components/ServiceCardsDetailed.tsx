@@ -7,7 +7,7 @@ const cards = [
     title: "LOVE PROBLEM SOLUTION",
     icon: Heart,
     color: "bg-pink-50 text-pink-600",
-    img: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=800&auto=format&fit=crop",
+    img: "/bring-back-ex.png",
     desc: "Restore harmony and passion in your relationship. Our spiritual guidance helps dissolve misunderstandings and strengthen the bond between partners through pure Quranic wisdom.",
     points: ["Get Lost Love Back", "Intercaste Marriage", "Parental Approval"]
   },
@@ -15,7 +15,7 @@ const cards = [
     title: "WAZIFA FOR HUSBAND BACK",
     icon: UserCheck,
     color: "bg-orange-50 text-orange-600",
-    img: "https://images.unsplash.com/photo-1590059378132-7a083436098c?q=80&w=800&auto=format&fit=crop",
+    img: "/husband-back.png",
     desc: "Stop marital conflicts and bring your husband's focus back to the family. We provide powerful Wazifas to rekindle love and commitment, ensuring a peaceful and happy home life.",
     points: ["Stop Extra-Marital Affairs", "End Daily Arguments", "Restore Respect"]
   },
@@ -23,7 +23,7 @@ const cards = [
     title: "DUA FOR EX LOVE BACK",
     icon: Flame,
     color: "bg-amber-50 text-amber-600",
-    img: "https://images.unsplash.com/photo-1516589174184-c685266e430c?q=80&w=800&auto=format&fit=crop",
+    img: "/get-love-back.png",
     desc: "Don't let a past relationship be a source of constant pain. Our specialized spiritual treatments are designed to clear negative influences and reunite lost lovers permanently.",
     points: ["Fast Attraction Dua", "Breakup Resolution", "Commitment Wazifa"]
   },
@@ -31,7 +31,7 @@ const cards = [
     title: "DUA FOR LOVE MARRIAGE",
     icon: Sparkles,
     color: "bg-yellow-50 text-yellow-600",
-    img: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=800&auto=format&fit=crop",
+    img: "/love-marriage.png",
     desc: "Remove all obstacles in your path to a blissful marriage. Whether it's parental opposition or societal pressure, our Rohani Ilaj provides the strength to unite with your soulmate.",
     points: ["Convince Parents", "Solve Caste Issues", "Marriage Barriers Removal"]
   },

@@ -7,37 +7,37 @@ const services = [
     title: "Get Your Love Back",
     desc: "Restore the passion and love in your life instantly with specialized spiritual prayers.",
     icon: Heart,
-    img: "https://images.unsplash.com/photo-1516589174184-c685266e430c?q=80&w=800&auto=format&fit=crop"
+    img: "/get-love-back.png"
   },
   {
     title: "Bring Back Ex Partner",
     desc: "Recover lost relationships and rekindle the flame with specialized Islamic Duas and Wazifas.",
     icon: Users,
-    img: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=800&auto=format&fit=crop"
+    img: "/bring-back-ex.png"
   },
   {
     title: "Breakup Problem",
     desc: "Specialized remedies to resolve misunderstandings and heal the pain of a recent breakup.",
     icon: ShieldCheck,
-    img: "https://images.unsplash.com/photo-1526653054275-5a4f37ea1c64?q=80&w=800&auto=format&fit=crop"
+    img: "/breakup-solution.png"
   },
   {
     title: "Love Marriage",
     desc: "Remove all barriers in your love marriage and convince your parents for a blissful union.",
     icon: UserCheck,
-    img: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=800&auto=format&fit=crop"
+    img: "/love-marriage.png"
   },
   {
     title: "Husband Wife Dispute",
     desc: "Stop an unwanted divorce or marital conflicts and re-establish love in your life.",
     icon: Home,
-    img: "https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=800&auto=format&fit=crop"
+    img: "/husband-wife.png"
   },
   {
     title: "Family Conflict",
     desc: "Resolve household conflicts and bring peace back to your family through spiritual guidance.",
     icon: Zap,
-    img: "https://images.unsplash.com/photo-1590059378132-7a083436098c?q=80&w=800&auto=format&fit=crop"
+    img: "/family-conflict.png"
   },
 ];
 

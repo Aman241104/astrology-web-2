@@ -22,7 +22,7 @@ export default function LoveProblemBanner() {
                 className="block relative aspect-[4/3] rounded-[2.5rem] md:rounded-[3.5rem] overflow-hidden border-[6px] md:border-[10px] border-gold shadow-[0_40px_100px_rgba(0,0,0,0.8)] scale-100 group-hover:scale-[1.02] transition-all duration-700 cursor-pointer"
               >
                  <img 
-                   src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=800&auto=format&fit=crop" 
+                   src="/love-banner.png" 
                    alt="Love Problem Solution Specialist" 
                    className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110"
                  />

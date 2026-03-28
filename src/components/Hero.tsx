@@ -132,7 +132,7 @@ export default function Hero() {
             {/* Main Specialist Image */}
             <div className="w-full h-full rounded-[4rem] overflow-hidden border-[12px] border-white shadow-2xl relative">
               <img 
-                src="https://images.unsplash.com/photo-1590059378132-7a083436098c?q=80&w=800&auto=format&fit=crop" 
+                src="/hero-image.png" 
                 alt="Mohammed Arif Khan" 
                 className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-all duration-700"
               />

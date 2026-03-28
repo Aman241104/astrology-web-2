@@ -26,9 +26,9 @@ export default function TrustHeader() {
       <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col lg:flex-row items-center justify-between gap-8">
         {/* Left: Brand Profile */}
         <div className="flex items-center gap-4 text-center lg:text-left">
-          <div className="w-20 h-20 md:w-24 md:h-24 bg-emerald-900 rounded-full flex items-center justify-center p-1 border-4 border-gold shadow-xl shrink-0">
+          <div className="w-20 h-20 md:w-24 md:h-24 bg-emerald-900 rounded-full flex items-center justify-center p-1 border-4 border-gold shadow-xl shrink-0 overflow-hidden">
             <img 
-              src="https://images.unsplash.com/photo-1590059378132-7a083436098c?q=80&w=200&auto=format&fit=crop" 
+              src="/profile-circle.png" 
               className="w-full h-full object-cover rounded-full" 
               alt="Mohammed Arif Khan Profile"
             />
