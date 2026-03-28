@@ -4,7 +4,7 @@ import { MessageCircle, Heart, Star, Phone } from "lucide-react";
 
 export default function LoveProblemBanner() {
   return (
-    <section className="relative overflow-hidden bg-emerald-950 py-12 md:py-20">
+    <section className="relative overflow-hidden bg-emerald-950 py-10 md:py-16">
       {/* Background Enhancements */}
       <div className="absolute inset-0 z-0 opacity-25">
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,rgba(212,175,55,0.2)_0%,transparent_70%)]" />

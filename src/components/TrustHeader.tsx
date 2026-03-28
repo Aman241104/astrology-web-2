@@ -21,7 +21,7 @@ export default function TrustHeader() {
   ];
 
   return (
-    <div className="bg-white pt-24 md:pt-28">
+    <div className="bg-white pt-8 md:pt-12 pb-12">
       {/* Top Info Section */}
       <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col lg:flex-row items-center justify-between gap-8">
         {/* Left: Brand Profile */}
