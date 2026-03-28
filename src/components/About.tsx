@@ -9,7 +9,7 @@ export default function About() {
         <div className="flex-1 relative group">
           <div className="relative z-10 rounded-[2.5rem] md:rounded-[3rem] overflow-hidden shadow-[0_40px_100px_rgba(0,43,0,0.15)] border-[8px] md:border-[12px] border-white transition-transform duration-700 group-hover:scale-[1.01]">
             <img
-              src="https://images.unsplash.com/photo-1584043762279-bb996969560a?q=80&w=800&auto=format&fit=crop"
+              src="/specialist.png"
               alt="Mohammed Arif Khan"
               className="w-full h-auto grayscale-[15%] group-hover:grayscale-0 transition-all duration-700 object-cover min-h-[400px]"
             />

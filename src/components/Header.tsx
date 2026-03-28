@@ -42,18 +42,27 @@ export default function Header() {
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <Link href="/" className="flex flex-col group">
-            <span className="font-serif text-xl md:text-2xl lg:text-3xl font-black text-white group-hover:text-gold transition-colors duration-300">
-              Mohammed <span className="text-gold group-hover:text-white transition-colors duration-300">Arif Khan</span>
+            <span className={cn(
+              "font-serif text-xl md:text-2xl lg:text-3xl font-black transition-colors duration-300",
+              isScrolled ? "text-white" : "text-emerald-950"
+            )}>
+              Mohammed <span className="text-gold">Arif Khan</span>
             </span>
             <div className="flex items-center gap-2">
               <div className="h-[1px] w-4 bg-gold/50" />
-              <span className="text-[9px] md:text-[11px] tracking-[0.3em] uppercase text-white/60 font-bold">
+              <span className={cn(
+                "text-[9px] md:text-[11px] tracking-[0.3em] uppercase font-bold",
+                isScrolled ? "text-white/60" : "text-emerald-900/60"
+              )}>
                 Spiritual Healer
               </span>
             </div>
           </Link>
 
-          <nav className="hidden lg:flex items-center space-x-10 text-[13px] uppercase tracking-[0.15em] font-bold text-white/80">
+          <nav className={cn(
+            "hidden lg:flex items-center space-x-10 text-[13px] uppercase tracking-[0.15em] font-bold transition-colors",
+            isScrolled ? "text-white/80" : "text-emerald-900/80"
+          )}>
             <Link href="/" className="hover:text-gold transition-all relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-gold hover:after:w-full after:transition-all">Home</Link>
             <Link href="#services" className="hover:text-gold transition-all relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-gold hover:after:w-full after:transition-all">Services</Link>
             <Link href="#about" className="hover:text-gold transition-all relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-gold hover:after:w-full after:transition-all">About</Link>
