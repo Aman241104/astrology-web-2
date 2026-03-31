@@ -16,18 +16,17 @@ export default function Hero() {
       const tl = gsap.timeline({ defaults: { ease: "power4.out", duration: 1.2 } });
 
       tl.from(".hero-text-content > *", { 
-        x: -60, 
+        y: 40, 
         opacity: 0, 
         stagger: 0.1,
         clearProps: "all"
       })
       .from(".hero-image-container", {
-        x: 60,
+        scale: 0.9,
         opacity: 0,
         duration: 1.5,
       }, "-=1");
 
-      // Counter animation
       const target = { val: 0 };
       gsap.to(target, {
         val: 76950,
@@ -44,127 +43,127 @@ export default function Hero() {
   return (
     <section 
       ref={heroRef}
-      className="relative min-h-[80vh] flex items-center pt-40 pb-12 overflow-hidden bg-white px-4 md:px-10"
+      className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden bg-spiritual-dark px-4 md:px-10"
     >
-      {/* Background Elements */}
+      {/* Dynamic Background Elements */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_30%,rgba(212,175,55,0.05)_0%,transparent_70%)]" />
-        <div className="absolute top-[10%] right-[10%] w-[600px] h-[600px] border border-emerald-100 rounded-full opacity-20 -z-10 animate-pulse" />
-        <div className="absolute -bottom-[10%] -left-[10%] w-[400px] h-[400px] bg-emerald-50 rounded-full blur-[100px] -z-10" />
+        <div className="absolute top-0 left-0 w-full h-full bg-arabesque opacity-5" />
+        <div className="absolute top-[20%] left-[10%] w-[800px] h-[800px] bg-gold/5 rounded-full blur-[150px] animate-pulse" />
+        <div className="absolute bottom-[10%] right-[10%] w-[600px] h-[600px] bg-emerald-700/10 rounded-full blur-[120px]" />
+        
+        {/* Floating Particles/Stars */}
+        {[...Array(20)].map((_, i) => (
+          <div 
+            key={i}
+            className="absolute bg-gold rounded-full opacity-20 animate-pulse"
+            style={{
+              width: Math.random() * 4 + 1 + 'px',
+              height: Math.random() * 4 + 1 + 'px',
+              top: Math.random() * 100 + '%',
+              left: Math.random() * 100 + '%',
+              animationDelay: Math.random() * 5 + 's',
+              animationDuration: Math.random() * 3 + 2 + 's'
+            }}
+          />
+        ))}
       </div>
 
-      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center relative z-10">
+      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-12 lg:gap-10 items-center relative z-10">
         
         {/* LEFT: Text Content */}
-        <div className="hero-text-content flex flex-col items-center lg:items-start text-center lg:text-left order-2 lg:order-1">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 rounded-full border border-emerald-100 mb-8 shadow-sm">
-            <Star size={14} className="text-gold fill-gold" />
-            <span className="text-emerald-900 text-[10px] md:text-xs font-black tracking-[0.2em] uppercase">
-              {t("hero.gold_medalist")}
+        <div className="hero-text-content flex flex-col items-center lg:items-start text-center lg:text-left order-2 lg:order-1 relative z-20">
+          <div className="inline-flex items-center gap-2 px-6 py-2.5 bg-gold/10 rounded-full border border-gold/30 mb-8 shadow-[0_0_20px_rgba(212,175,55,0.2)]">
+            <Star size={16} className="text-gold fill-gold animate-spin-slow" />
+            <span className="text-gold text-xs md:text-sm font-black tracking-[0.3em] uppercase">
+              10 Times Gold Medalist Specialist
             </span>
           </div>
 
-          <h1 className="font-serif text-4xl md:text-7xl lg:text-8xl font-black leading-[1.1] mb-6 tracking-tighter text-emerald-950">
-            {t("hero.world_renowned")} <br />
-            <span className="text-gradient-gold italic pr-4">{t("hero.mohammed")}</span> <br />
-            <span className="text-emerald-900">{t("hero.arif_khan")}</span>
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-black leading-[0.85] mb-8 tracking-tighter text-white uppercase">
+            World Renowned <br />
+            <span className="text-gradient-gold italic pr-4">Mohammed</span> <br />
+            <span className="text-white">Arif Khan</span>
           </h1>
 
-          <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-8">
-            {["Love Problem", "Lost Love Back", "Husband Wife", "Marriage"].map((tag, i) => (
-              <div key={i} className="px-4 py-1.5 bg-white border border-emerald-100 rounded-xl shadow-sm flex items-center gap-2">
-                <ShieldCheck size={14} className="text-emerald-600" />
-                <span className="text-[10px] md:text-xs font-bold text-emerald-900 uppercase tracking-widest">#{tag}</span>
+          <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-10">
+            {["Vashikaran", "Love Problem", "Lost Love Back", "Marriage Expert"].map((tag, i) => (
+              <div key={i} className="px-5 py-2 bg-emerald-900/40 backdrop-blur-md border border-gold/20 rounded-2xl shadow-xl flex items-center gap-2 hover:border-gold/50 transition-colors">
+                <ShieldCheck size={14} className="text-gold" />
+                <span className="text-[10px] md:text-xs font-bold text-white uppercase tracking-widest">{tag}</span>
               </div>
             ))}
           </div>
 
-          <p className="text-lg md:text-2xl text-gray-600 max-w-xl mb-10 leading-relaxed font-medium">
-            {t("hero.tagline")} <br />
-            <span className="text-emerald-900 font-black italic underline decoration-gold/50 underline-offset-4">
-              {count.toLocaleString()}+ {t("hero.cases_solved")}
-            </span>
+          <p className="text-xl md:text-3xl text-white/70 max-w-xl mb-12 leading-tight font-medium italic">
+            "Your confidence is my strength. Get immediate solution to all life problems within 24-72 hours."
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+          <div className="flex flex-col sm:flex-row items-center gap-6 w-full sm:w-auto">
             <a
               href="tel:+919784412832"
-              className="w-full sm:w-auto flex items-center justify-center gap-3 bg-emerald-950 hover:bg-emerald-900 text-white px-10 py-5 rounded-2xl font-black text-lg transition-all shadow-[0_20px_50px_rgba(0,43,0,0.3)] hover:scale-105 active:scale-95 border-2 border-white/10"
+              className="w-full sm:w-auto flex items-center justify-center gap-4 bg-white text-emerald-950 px-12 py-6 rounded-3xl font-black text-xl transition-all shadow-[0_20px_50px_rgba(255,255,255,0.2)] hover:scale-105 active:scale-95 border-b-8 border-gray-200 uppercase tracking-tighter"
             >
-              <Phone size={22} />
-              <span>{t("common.call_now")}</span>
+              <Phone size={24} fill="currentColor" />
+              <span>Call Now</span>
             </a>
             <a
               href="https://wa.me/919784412832"
-              className="w-full sm:w-auto flex items-center justify-center gap-3 bg-[#25D366] hover:bg-emerald-950 text-white px-10 py-5 rounded-2xl font-black text-lg transition-all shadow-[0_20px_50px_rgba(37,211,102,0.3)] hover:scale-105 active:scale-95 border border-white/10 group"
+              className="w-full sm:w-auto flex items-center justify-center gap-4 bg-[#25D366] text-white px-12 py-6 rounded-3xl font-black text-xl transition-all shadow-[0_20px_50px_rgba(37,211,102,0.3)] hover:scale-105 active:scale-95 border-b-8 border-green-700 group uppercase tracking-tighter"
             >
-              <div className="bg-white rounded-full p-1 group-hover:bg-[#25D366] transition-colors">
-                <svg viewBox="0 0 24 24" className="w-5 h-5 fill-[#25D366] group-hover:fill-white transition-colors" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.353-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.136 1.36.117 1.871.05.57-.075 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.87 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                </svg>
-              </div>
-              <span>{t("common.whatsapp_now")}</span>
+              <MessageCircle size={24} fill="currentColor" />
+              <span>WhatsApp</span>
             </a>
           </div>
 
-          <div className="mt-12 flex items-center gap-6 py-6 border-t border-emerald-50 w-full lg:w-auto">
-             <div className="flex -space-x-3">
-                {[1,2,3,4].map(i => (
-                  <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-emerald-100 flex items-center justify-center overflow-hidden shadow-sm relative">
-                    <Image 
-                      src={`https://i.pravatar.cc/100?img=${i+10}`} 
-                      alt="client" 
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                ))}
-             </div>
-             <div className="text-left">
-                <div className="flex gap-0.5 text-gold mb-0.5">
-                  {[1,2,3,4,5].map(i => <Star key={i} size={14} fill="currentColor" />)}
+          <div className="mt-16 flex flex-col md:flex-row items-center gap-8 py-8 border-t border-white/5 w-full">
+             <div className="text-center md:text-left">
+                <div className="flex justify-center md:justify-start gap-1 text-gold mb-2">
+                  {[1,2,3,4,5].map(i => <Star key={i} size={20} fill="currentColor" className="animate-pulse" />)}
                 </div>
-                <p className="text-[10px] md:text-xs font-black text-emerald-900 uppercase tracking-widest">{t("hero.trusted_by")}</p>
+                <p className="text-lg font-black text-white uppercase tracking-widest">
+                  {count.toLocaleString()}+ <span className="text-gold">Happy Clients Globally</span>
+                </p>
              </div>
           </div>
+
         </div>
 
         {/* RIGHT: Hero Image */}
-        <div className="hero-image-container relative order-1 lg:order-2 hidden md:flex justify-center">
-          <div className="relative w-full max-w-[500px] aspect-[4/5]">
-            {/* Visual Backdrops */}
-            <div className="absolute inset-0 bg-gold rounded-[4rem] rotate-6 scale-95 opacity-20 -z-10" />
-            <div className="absolute inset-0 bg-emerald-900 rounded-[4rem] -rotate-3 scale-95 opacity-10 -z-10" />
+        <div className="hero-image-container relative order-1 lg:order-2 flex justify-center float-slow">
+          <div className="relative w-full max-w-[550px] aspect-[4/5]">
+            {/* Spiritual Backdrops */}
+            <div className="absolute inset-0 bg-gold rounded-[5rem] rotate-12 scale-95 opacity-10 animate-pulse" />
+            <div className="absolute inset-0 bg-white rounded-[5rem] -rotate-6 scale-95 opacity-5" />
             
-            {/* Main Specialist Image */}
-            <div className="w-full h-full rounded-[4rem] overflow-hidden border-[12px] border-white shadow-2xl relative">
+            {/* Main Specialist Image with Ornate Border */}
+            <div className="w-full h-full rounded-[5rem] overflow-hidden border-[16px] border-white/10 shadow-[0_50px_100px_rgba(0,0,0,0.6)] relative group">
               <Image 
                 src="/hero-image.png" 
                 alt="Mohammed Arif Khan" 
                 fill
                 priority
-                sizes="(max-width: 768px) 100vw, 500px"
-                className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-all duration-700"
+                sizes="(max-width: 768px) 100vw, 550px"
+                className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-1000"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/40 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/80 via-transparent to-transparent" />
               
               {/* Overlay Badge */}
-              <div className="absolute bottom-8 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-md px-6 py-3 rounded-2xl shadow-xl flex items-center gap-3 border border-emerald-100 whitespace-nowrap">
-                 <div className="w-10 h-10 bg-gold rounded-full flex items-center justify-center text-emerald-950">
-                    <Heart size={20} fill="currentColor" />
+              <div className="absolute bottom-10 left-1/2 -translate-x-1/2 bg-white p-8 rounded-[3rem] shadow-[0_30px_60px_rgba(0,0,0,0.4)] flex items-center gap-6 border-4 border-gold group-hover:scale-110 transition-transform">
+                 <div className="w-16 h-16 bg-gold rounded-full flex items-center justify-center text-emerald-950 shadow-inner">
+                    <Heart size={32} fill="currentColor" />
                  </div>
-                 <div>
-                    <p className="text-[10px] font-black text-emerald-900 uppercase tracking-widest leading-none mb-1">{t("hero.relationship_expert")}</p>
-                    <p className="text-xs font-bold text-gray-500">{t("common.verified_expert")}</p>
+                 <div className="text-left">
+                    <p className="text-sm font-black text-emerald-950 uppercase tracking-[0.2em] leading-none mb-2">Verified Expert</p>
+                    <p className="text-2xl font-black text-gold uppercase tracking-tighter leading-none">Spiritual Healer</p>
                  </div>
               </div>
             </div>
 
             {/* Floating Elements */}
-            <div className="absolute -top-10 -right-10 bg-white p-6 rounded-3xl shadow-2xl border border-emerald-50 hidden md:block">
-               <Zap className="text-gold mb-2" size={32} fill="currentColor" />
-               <p className="text-2xl font-black text-emerald-950 leading-none">{t("hero.instant")}</p>
-               <p className="text-xs font-bold text-emerald-700 uppercase tracking-widest">{t("hero.solutions")}</p>
+            <div className="absolute -top-12 -right-12 bg-emerald-900 p-10 rounded-[4rem] shadow-2xl border-4 border-gold hidden lg:block pulse-gold">
+               <Zap className="text-gold mb-4" size={48} fill="currentColor" />
+               <p className="text-4xl font-black text-white leading-none tracking-tighter uppercase">24/7</p>
+               <p className="text-sm font-bold text-gold uppercase tracking-widest">Available</p>
             </div>
           </div>
         </div>
@@ -172,9 +171,9 @@ export default function Hero() {
       </div>
       
       {/* Scroll Down Hint */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-30 animate-bounce cursor-pointer">
-         <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-emerald-900">{t("hero.explore")}</span>
-         <div className="w-[1px] h-10 bg-emerald-900" />
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-50 cursor-pointer">
+         <div className="w-[2px] h-20 bg-gradient-to-b from-gold to-transparent" />
+         <span className="text-xs font-black uppercase tracking-[0.5em] text-gold">SCROLL TO EXPLORE</span>
       </div>
     </section>
   );
