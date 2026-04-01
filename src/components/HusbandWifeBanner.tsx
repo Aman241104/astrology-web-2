@@ -34,11 +34,11 @@ export default function HusbandWifeBanner() {
               Relationship Healing Expert
             </div>
             <h2 className="text-5xl md:text-8xl font-black text-white leading-[0.85] mb-10 uppercase tracking-tighter">
-              Husband Wife <br />
-              <span className="text-gradient-gold italic">Dispute</span> Solution
+              Wazifa For <br />
+              <span className="text-gradient-gold italic">Husband</span> Back
             </h2>
             <p className="text-xl text-white/70 mb-12 leading-relaxed font-medium italic border-l-8 border-gold pl-8">
-              Are you facing continuous conflicts, lack of understanding, or third-party interference in your marriage? Our spiritual healing and astrological guidance can restore love and harmony in your relationship within 24 hours.
+              Stop marital conflicts and bring your husband's focus back to the family. Our powerful spiritual wazaif can rekindle love and commitment permanently within days.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12 w-full">

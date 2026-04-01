@@ -18,22 +18,20 @@ export default function ExLoveBackBanner() {
             </div>
 
             <h2 className="text-5xl md:text-7xl font-black text-white uppercase leading-[0.85] mb-8 tracking-tighter">
-              Get Your <br />
-              <span className="text-gradient-gold italic">Ex Love</span> Back
-            </h2>
-            
+             Dua For <br />
+             <span className="text-gradient-gold italic">Ex Love</span> Back
+            </h2>            
             <p className="text-white/70 text-lg md:text-xl font-medium mb-10 max-w-xl">
               Don't let a temporary misunderstanding end your beautiful relationship. Our powerful spiritual wazaif and remedies have reunited thousands of couples within 24-72 hours.
             </p>
 
             <div className="flex flex-wrap justify-center lg:justify-start gap-4 mb-12">
                {[
-                 "Vashikaran Specialist",
+                 "Rohani Specialist",
                  "Love Problem Expert",
                  "Relationship Reconnection",
                  "Stop Divorce"
-               ].map((item, i) => (
-                 <div key={i} className="px-4 py-2 border border-white/20 rounded-full bg-white/5 flex items-center gap-2">
+               ].map((item, i) => (                 <div key={i} className="px-4 py-2 border border-white/20 rounded-full bg-white/5 flex items-center gap-2">
                     <Star size={12} className="text-gold fill-gold" />
                     <span className="text-[10px] font-bold text-white uppercase tracking-widest">{item}</span>
                  </div>

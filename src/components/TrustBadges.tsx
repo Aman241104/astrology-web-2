@@ -1,11 +1,11 @@
 "use client";
 
-import { Star, ShieldCheck, Globe, Trophy } from "lucide-react";
+import { Star, ShieldCheck, Globe, Clock, Lock } from "lucide-react";
 
 export default function TrustBadges() {
   const badges = [
-    { icon: <Trophy size={40} className="text-gold" />, title: "Gold Medalist", desc: "10 Times Awarded" },
-    { icon: <ShieldCheck size={40} className="text-gold" />, title: "ISO Certified", desc: "Global Standards" },
+    { icon: <Clock size={40} className="text-gold" />, title: "25+ Years Exp", desc: "Global Service" },
+    { icon: <Lock size={40} className="text-gold" />, title: "100% Privacy", desc: "Full Confidentiality" },
     { icon: <Globe size={40} className="text-gold" />, title: "Global Presence", desc: "Serving 25+ Countries" },
     { icon: <Star size={40} className="text-gold" />, title: "4.9/5 Rating", desc: "By 100k+ Clients" },
   ];

@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Heart, CheckCircle, Phone, MessageCircle, Star } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
-export default function IntercasteMarriageBanner() {
+export default function MarriageObstaclesBanner() {
   const { t } = useLanguage();
 
   return (
@@ -17,10 +17,9 @@ export default function IntercasteMarriageBanner() {
           <div className="relative group order-2 lg:order-1 flex justify-center">
             <div className="relative aspect-[4/5] w-full max-w-[500px] rounded-[4rem] overflow-hidden shadow-[0_40px_100px_rgba(0,0,0,0.2)] border-[12px] border-emerald-950/5 group-hover:border-gold/20 transition-all duration-700">
               <Image 
-                src="/love-marriage.png" 
-                alt="Intercaste Marriage Specialist" 
-                fill
-                className="object-cover group-hover:scale-110 transition-transform duration-[2s]"
+                src="/love-marriage.png"
+                alt="Marriage Obstacles Specialist"
+                fill                className="object-cover group-hover:scale-110 transition-transform duration-[2s]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/60 via-transparent to-transparent" />
             </div>
@@ -39,21 +38,20 @@ export default function IntercasteMarriageBanner() {
               #1 Marriage Specialist
             </div>
             <h2 className="text-5xl md:text-8xl font-black text-emerald-950 leading-[0.85] mb-10 uppercase tracking-tighter">
-              Intercaste <br />
-              <span className="text-gradient-gold italic">Marriage</span> Specialist
+             Dua For <br />
+             <span className="text-gradient-gold italic">Love Marriage</span>
             </h2>
             <p className="text-xl text-gray-600 mb-12 leading-relaxed font-medium italic border-l-8 border-gold pl-8">
-              Are you facing social or family barriers in your intercaste marriage? Our spiritual remedies can soften hearts and align planets to ensure a smooth path to your union within 3 days.
+             Remove all obstacles in your path to a blissful marriage. Our spiritual remedies can soften hearts and align your life to ensure a smooth path to your union within 24-72 hours.
             </p>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
-              {[
-                "Parent's Approval",
-                "Social Barriers",
-                "Kundli Matching",
-                "Family Conflict"
-              ].map((item, i) => (
-                <div key={i} className="flex items-center gap-4 p-4 bg-emerald-50 rounded-2xl border border-emerald-100 group/item hover:bg-white hover:shadow-xl transition-all">
+             {[
+               "Parent's Approval",
+               "Social Barriers",
+               "Spiritual Compatibility",
+               "Family Conflict"
+             ].map((item, i) => (                <div key={i} className="flex items-center gap-4 p-4 bg-emerald-50 rounded-2xl border border-emerald-100 group/item hover:bg-white hover:shadow-xl transition-all">
                   <CheckCircle className="text-emerald-600 group-hover/item:text-gold" size={24} />
                   <span className="text-sm font-black text-emerald-950 uppercase tracking-widest">{item}</span>
                 </div>

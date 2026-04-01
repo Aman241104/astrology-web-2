@@ -44,7 +44,7 @@ export const translations = {
       spiritual_healer: "Spiritual Healer",
     },
     hero: {
-      gold_medalist: "10 Times Gold Medalist Specialist",
+      gold_medalist: "World Famous Spiritual Specialist",
       world_renowned: "World Renowned",
       mohammed: "Mohammed",
       arif_khan: "Arif Khan",
@@ -57,9 +57,9 @@ export const translations = {
       explore: "Explore",
     },
     banner: {
-      title: "LOVE",
-      highlight: "PROBLEM",
-      subtitle: "SOLVED PERMANENTLY",
+      title: "LOVE PROBLEM",
+      highlight: "SOLUTION",
+      subtitle: "100% SUCCESS RATE",
       immediate: "Immediate Solutions within 24 Hours",
       desc: "Don't let misunderstandings or external influences destroy your beautiful relationship. Mohammed Arif Khan uses pure Rohani methods to restore love, trust, and passion between partners.",
     },
@@ -88,7 +88,7 @@ export const translations = {
 
       love_detailed_title: "LOVE PROBLEM SOLUTION",
       love_detailed_desc: "Restore harmony and passion in your relationship. Our spiritual guidance helps dissolve misunderstandings and strengthen the bond between partners through pure Quranic wisdom.",
-      love_points: ["Get Lost Love Back", "Intercaste Marriage", "Parental Approval"],
+      love_points: ["Get Lost Love Back", "Marriage Obstacles", "Parental Approval"],
 
       husband_detailed_title: "WAZIFA FOR HUSBAND BACK",
       husband_detailed_desc: "Stop marital conflicts and bring your husband's focus back to the family. We provide powerful Wazifas to rekindle love and commitment, ensuring a peaceful and happy home life.",
@@ -113,7 +113,7 @@ export const translations = {
     trust: {
       title: "Proven Spiritual Solutions Globally",
       profile_status: "World Famous Specialist",
-      gold_medalist: "( 10 Times Gold-Medalist Rohani specialist )",
+      gold_medalist: "( Registered Spiritual Rohani Specialist )",
       cta: "One Call Can Change Your Life",
       privacy_title: "100% Privacy",
       privacy_sub: "Full Confidentiality Guaranteed",
@@ -153,7 +153,7 @@ export const translations = {
       subtitle: "Top Solutions",
       authority: "Spiritual Authority",
       desc: '"Every problem has a spiritual remedy." Mohammed Arif Khan provides 100% Halal and effective solutions for all your relationship worries.',
-      gold_medalist: "Gold Medalist",
+      gold_medalist: "Verified Expert",
       verified_expert: "Verified Rohani Expert",
       guaranteed_relief: "Guaranteed Relief",
       fast_results: "Fast Results in 24 Hours",
@@ -194,7 +194,7 @@ export const translations = {
       title: "World Renowned Maulana",
       subtitle: "Mohammed Arif Khan",
       meet: "Meet the Specialist",
-      gold_medalist: "Gold Medalist & Registered Rohani Specialist",
+      gold_medalist: "Registered Rohani Specialist & Healer",
       quote: '"Spiritual healing is not just a practice; it is the divine light that guides lost souls through the darkest tunnels of life back to happiness."',
       desc: "Mohammed Arif Khan is a globally recognized authority in Islamic spiritual healing (Rohani Ilaj). For over 25 years, he has dedicated his life to helping individuals overcome seemingly impossible obstacles using pure Quranic remedies and ancient spiritual wisdom. He has been honored multiple times for his contributions to spiritual science and peace.",
       years: "Years of Global Service",
@@ -291,7 +291,7 @@ export const translations = {
         "Dua for Love Back",
         "Love Marriage Solution",
         "Husband Wife Dispute",
-        "Intercaste Marriage",
+        "Marriage Obstacles",
         "Convince Parents",
       ]
     }
@@ -339,7 +339,7 @@ export const translations = {
       spiritual_healer: "आध्यात्मिक चिकित्सक",
     },
     hero: {
-      gold_medalist: "10 बार स्वर्ण पदक विजेता विशेषज्ञ",
+      gold_medalist: "विश्व प्रसिद्ध आध्यात्मिक विशेषज्ञ",
       world_renowned: "विश्व प्रसिद्ध",
       mohammed: "मोहम्मद",
       arif_khan: "आरिफ खान",
@@ -352,9 +352,9 @@ export const translations = {
       explore: "अन्वेषण करें",
     },
     banner: {
-      title: "प्रेम",
-      highlight: "समस्या",
-      subtitle: "स्थायी रूप से हल",
+      title: "प्रेम समस्या",
+      highlight: "समाधान",
+      subtitle: "100% सफलता दर",
       immediate: "24 घंटों के भीतर तत्काल समाधान",
       desc: "गलतफहमी या बाहरी प्रभावों को अपने सुंदर रिश्ते को नष्ट न करने दें। मोहम्मद आरिफ खान भागीदारों के बीच प्यार, विश्वास और जुनून को बहाल करने के लिए शुद्ध रूहानी तरीकों का उपयोग करते हैं।",
     },
@@ -383,7 +383,7 @@ export const translations = {
 
       love_detailed_title: "प्रेम समस्या समाधान",
       love_detailed_desc: "अपने रिश्ते में सद्भाव और जुनून बहाल करें। हमारा आध्यात्मिक मार्गदर्शन गलतफहमियों को दूर करने और शुद्ध कुरान के ज्ञान के माध्यम से भागीदारों के बीच बंधन को मजबूत करने में मदद करता है।",
-      love_points: ["खोया प्यार वापस पाएं", "अंतर्जातीय विवाह", "माता-पिता की स्वीकृति"],
+      love_points: ["खोया प्यार वापस पाएं", "प्रेम विवाह बाधाएं", "माता-पिता की स्वीकृति"],
 
       husband_detailed_title: "पति की वापसी के लिए वज़ीफ़ा",
       husband_detailed_desc: "वैवाहिक संघर्षों को रोकें और अपने पति का ध्यान परिवार पर वापस लाएं। हम प्यार और प्रतिबद्धता को फिर से जगाने के लिए शक्तिशाली वज़ीफ़ा प्रदान करते हैं।",
@@ -408,7 +408,7 @@ export const translations = {
     trust: {
       title: "विश्व स्तर पर सिद्ध आध्यात्मिक समाधान",
       profile_status: "विश्व प्रसिद्ध विशेषज्ञ",
-      gold_medalist: "( 10 बार स्वर्ण पदक विजेता रूहानी विशेषज्ञ )",
+      gold_medalist: "( पंजीकृत आध्यात्मिक रूहानी विशेषज्ञ )",
       cta: "एक कॉल आपका जीवन बदल सकती है",
       privacy_title: "100% गोपनीयता",
       privacy_sub: "पूर्ण गोपनीयता की गारंटी",
@@ -448,7 +448,7 @@ export const translations = {
       subtitle: "शीर्ष समाधान",
       authority: "आध्यात्मिक अधिकार",
       desc: '"हर समस्या का एक आध्यात्मिक उपचार है।" मोहम्मद आरिफ खान आपके रिश्ते की सभी चिंताओं के लिए 100% हलाल और प्रभावी समाधान प्रदान करते हैं।',
-      gold_medalist: "स्वर्ण पदक विजेता",
+      gold_medalist: "सत्यापित विशेषज्ञ",
       verified_expert: "सत्यापित रूहानी विशेषज्ञ",
       guaranteed_relief: "गारंटीड राहत",
       fast_results: "24 घंटों में तेज़ परिणाम",
@@ -489,8 +489,8 @@ export const translations = {
       title: "विश्व प्रसिद्ध मौलाना",
       subtitle: "मोहम्मद आरिफ खान",
       meet: "विशेषज्ञ से मिलें",
-      gold_medalist: "स्वर्ण पदक विजेता और पंजीकृत रूहानी विशेषज्ञ",
-      quote: '"आध्यात्मिक उपचार केवल एक अभ्यास नहीं है; यह वह दिव्य प्रकाश है जो खोई हुई आत्माओं को जीवन की सबसे अंधेरी सुरंगों से वापस खुशी की ओर ले जाता है।ँ"',
+      gold_medalist: "पंजीकृत रूहानी विशेषज्ञ और हीलर",
+      quote: '"आध्यात्मिक उपचार केवल एक अभ्यास नहीं है; यह वह दिव्य प्रकाश है जो खोई हुई आत्माوں को जीवन की सबसे अंधेरी सुरंगों से वापस खुशी की ओर ले जाता है।ँ"',
       desc: "मोहम्मद आरिफ खान इस्लामी आध्यात्मिक उपचार (रूहानी इलाज) में विश्व स्तर पर मान्यता प्राप्त अधिकार हैं। 25 से अधिक वर्षों से, उन्होंने शुद्ध कुरान उपचार और प्राचीन आध्यात्मिक ज्ञान का उपयोग करके व्यक्तियों को असंभव लगने वाली बाधाओं को दूर करने में मदद करने के लिए अपना जीवन समर्पित कर दिया है। उन्हें आध्यात्मिक विज्ञान और शांति में उनके योगदान के लिए कई बार सम्मानित किया गया है।",
       years: "वैश्विक सेवा के वर्ष",
       features: [
@@ -567,8 +567,8 @@ export const translations = {
           answer: "हाँ। हम सख्ती से इस्लामी सिद्धांतों का पालन करते हैं। हमारे सभी उपचार पवित्र कुरान और सुन्नत पर आधारित हैं। हम किसी भी प्रकार की निषिद्ध या हानिकारक प्रथाओं में शामिल नहीं होते हैं।",
         },
         {
-          question: "क्या आप अंतर्जातीय विवाह समस्याओं में मदद कर सकते हैं?",
-          answer: "हाँ, मोहम्मद आरिफ खान अंतर्जातीय और प्रेम विवाह से जुड़ी बाधाओं को हल करने में विशेषज्ञ हैं, आध्यात्मिक माध्यम से माता-पिता की स्वीकृति प्राप्त करने में आपकी मदद करते हैं।",
+          question: "क्या आप प्रेम विवाह की बाधाओं को हल करने में मदद कर सकते हैं?",
+          answer: "हाँ, मोहम्मद आरिफ खान प्रेम विवाह और पारिवारिक स्वीकृति से जुड़ी बाधाओं को हल करने में विशेषज्ञ हैं, आध्यात्मिक माध्यम से माता-पिता की स्वीकृति प्राप्त करने में आपकी मदद करते हैं।",
         },
         {
           question: "क्या आपके उपचार का कोई दुष्प्रभाव है?",
@@ -586,7 +586,7 @@ export const translations = {
         "प्यार वापस पाने के लिए दुआ",
         "प्रेम विवाह समाधान",
         "पति-पत्नी विवाद",
-        "अंतर्जातीय विवाह",
+        "विवाह बाधाएं",
         "माता-पिता को मनाएं",
       ]
     }
@@ -634,7 +634,7 @@ export const translations = {
       spiritual_healer: "روحانی معالج",
     },
     hero: {
-      gold_medalist: "10 بار گولڈ میڈلسٹ ماہر",
+      gold_medalist: "عالمی سطح پر مشہور روحانی ماہر",
       world_renowned: "دنیا بھر میں مشہور",
       mohammed: "محمد",
       arif_khan: "عارف خان",
@@ -647,9 +647,9 @@ export const translations = {
       explore: "تلاش کریں",
     },
     banner: {
-      title: "محبت",
-      highlight: "مسئلہ",
-      subtitle: "مستقل حل",
+      title: "محبت کا مسئلہ",
+      highlight: "حل",
+      subtitle: "100% کامیابی کی شرح",
       immediate: "24 گھنٹوں کے اندر فوری حل",
       desc: "غلط فہمیوں یا بیرونی اثرات کو اپنے خوبصورت رشتے کو تباہ نہ کرنے دیں۔ محمد عارف خان شراکت داروں کے درمیان محبت، اعتماد اور جذبے کو بحال کرنے کے لیے خالص روحانی طریقے استعمال کرتے ہیں۔",
     },
@@ -678,7 +678,7 @@ export const translations = {
 
       love_detailed_title: "محبت کے مسائل کا حل",
       love_detailed_desc: "اپنے رشتے میں ہم آہنگی اور جذبہ بحال کریں۔ ہماری روحانی رہنمائی غلط فہمیوں کو ختم کرنے اور خالص قرآنی حکمت کے ذریعے شراکت داروں کے درمیان بندھن کو مضبوط کرنے میں مدد کرتی ہے۔",
-      love_points: ["کھوئی ہوئی محبت واپس پائیں", "بین الذاتی شادی", "والدین کی رضامندی"],
+      love_points: ["کھوئی ہوئی محبت واپس پائیں", "شادی کی رکاوٹیں", "والدین کی رضامندی"],
 
       husband_detailed_title: "شوہر کی واپسی کے لیے وظیفہ",
       husband_detailed_desc: "ازدواجی تنازعات کو ختم کریں اور اپنے شوہر کی توجہ دوبارہ خاندان پر لائیں۔ ہم محبت اور وابستگی کو دوبارہ بیدار کرنے کے لیے طاقتور وظائف فراہم کرتے ہیں۔",
@@ -703,7 +703,7 @@ export const translations = {
     trust: {
       title: "عالمی سطح پر ثابت شدہ روحانی حل",
       profile_status: "دنیا بھر میں مشہور ماہر",
-      gold_medalist: "( 10 بار گولڈ میڈلسٹ روحانی ماہر )",
+      gold_medalist: "( رجسٹرڈ روحانی ماہر )",
       cta: "ایک کال آپ کی زندگی بدل سکتی ہے",
       privacy_title: "100% رازداری",
       privacy_sub: "مکمل رازداری کی ضمانت",
@@ -743,7 +743,7 @@ export const translations = {
       subtitle: "بہترین حل",
       authority: "روحانی اتھارٹی",
       desc: '"ہر مسئلے کا روحانی علاج ہے۔" محمد عارف خان آپ کے رشتے کی تمام پریشانیوں کے لیے 100% حلال اور مؤثر حل فراہم کرتے ہیں۔',
-      gold_medalist: "گولڈ میڈلسٹ",
+      gold_medalist: "تصدیق شدہ ماہر",
       verified_expert: "تصدیق شدہ روحانی ماہر",
       guaranteed_relief: "گارنٹی شدہ سکون",
       fast_results: "24 گھنٹوں میں تیز نتائج",
@@ -784,7 +784,7 @@ export const translations = {
       title: "دنیا بھر میں مشہور مولانا",
       subtitle: "محمد عارف خان",
       meet: "ماہر سے ملیں",
-      gold_medalist: "گولڈ میڈلسٹ اور رجسٹرڈ روحانی ماہر",
+      gold_medalist: "رجسٹرڈ روحانی ماہر اور ہیلر",
       quote: '"روحانی علاج صرف ایک مشق نہیں ہے؛ یہ وہ الہی نور ہے جو بھٹکی ہوئی روحوں کو زندگی کی تاریک ترین سرنگوں سے واپس خوشیوں کی طرف لے جاتا ہے۔"',
       desc: "محمد عارف خان اسلامی روحانی علاج (روحانی علاج) میں عالمی سطح پر تسلیم شدہ اتھارٹی ہیں۔ 25 سال سے زیادہ عرصے سے، انہوں نے خالص قرآنی علاج اور قدیم روحانی حکمت کا استعمال کرتے ہوئے افراد کو ناممکن نظر آنے والی رکاوٹوں کو دور کرنے میں مدد کے لیے اپنی زندگی وقف کر دی ہے۔ انہیں روحانی سائنس اور امن میں ان کے تعاون کے لیے کئی بار نوازا گیا ہے۔",
       years: "عالمی خدمت کے سال",
@@ -862,8 +862,8 @@ export const translations = {
           answer: "جی ہاں۔ ہم سختی سے اسلامی اصولوں پر عمل کرتے ہیں۔ ہمارے تمام علاج قرآن پاک اور سنت پر مبنی ہیں۔ ہم کسی بھی قسم کے ممنوعہ یا نقصان دہ طریقوں میں ملوث نہیں ہوتے۔",
         },
         {
-          question: "کیا آپ بین الذاتی شادی کے مسائل میں مدد کر سکتے ہیں؟",
-          answer: "جی ہاں، محمد عارف خان بین الذاتی اور پسند کی شادی سے متعلق رکاوٹوں کو حل کرنے میں مہارت رکھتے ہیں، روحانی ذرائع سے والدین کی رضامندی حاصل کرنے میں آپ کی مدد کرتے ہیں۔",
+          question: "کیا آپ پسند کی شادی کی رکاوٹوں کو حل کرنے میں مدد کر سکتے ہیں؟",
+          answer: "جی ہاں، محمد عارف خان پسند کی شادی اور خاندانی رضامندی سے متعلق رکاوٹوں کو حل کرنے میں مہارت رکھتے ہیں، روحانی ذرائع سے والدین کی رضامندی حاصل کرنے میں آپ کی مدد کرتے ہیں۔",
         },
         {
           question: "کیا آپ کے علاج کا کوئی سائیڈ ایفیکٹ ہے؟",
@@ -881,7 +881,7 @@ export const translations = {
         "محبت کی واپسی کی دعا",
         "پسند کی شادی کا حل",
         "میاں بیوی کا تنازعہ",
-        "بین الذاتی شادی",
+        "شادی کی رکاوٹیں",
         "والدین کو منانا",
       ]
     }

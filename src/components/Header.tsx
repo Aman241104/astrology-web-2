@@ -29,9 +29,9 @@ export default function Header() {
   return (
     <>
       {/* Top Bar with Marquee on Mobile */}
-      <div className="bg-gold text-emerald-950 py-2.5 px-4 z-[70] fixed top-0 left-0 right-0 h-10 flex items-center overflow-hidden border-b border-black/5 shadow-sm">
+      <div className="bg-gold text-emerald-950 px-4 z-[70] fixed top-0 left-0 right-0 h-8 md:h-10 flex items-center overflow-hidden border-b border-black/5 shadow-sm">
         <div className="md:hidden w-full overflow-hidden whitespace-nowrap">
-          <div className="animate-marquee font-black uppercase tracking-wider text-[11px]">
+          <div className="animate-marquee font-black uppercase tracking-wider text-[10px]">
             {t("nav.tagline")} &nbsp;&nbsp;&nbsp;&nbsp; {t("nav.tagline")}
           </div>
         </div>
@@ -42,24 +42,24 @@ export default function Header() {
 
       <header
         className={cn(
-          "fixed top-10 left-0 right-0 z-50 transition-all duration-500 px-4 md:px-10",
+          "fixed top-8 md:top-10 left-0 right-0 z-50 transition-all duration-500 px-3 md:px-10",
           isScrolled
-            ? "bg-emerald-950/95 backdrop-blur-xl py-3 shadow-[0_10px_30px_rgba(0,0,0,0.3)] border-b border-white/10"
-            : "bg-white/90 backdrop-blur-md py-5 border-b border-emerald-50 shadow-sm"
+            ? "bg-emerald-950/95 backdrop-blur-xl py-2 md:py-3 shadow-[0_10px_30px_rgba(0,0,0,0.3)] border-b border-white/10"
+            : "bg-white/90 backdrop-blur-md py-3 md:py-5 border-b border-emerald-50 shadow-sm"
         )}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <Link href="/" className="flex flex-col group">
             <span className={cn(
-              "font-serif text-xl md:text-2xl lg:text-3xl font-black transition-colors duration-300",
+              "font-serif text-lg md:text-2xl lg:text-3xl font-black transition-colors duration-300",
               isScrolled ? "text-white" : "text-emerald-950"
             )}>
               {t("hero.mohammed")} <span className="text-gold">{t("hero.arif_khan")}</span>
             </span>
-            <div className="flex items-center gap-2">
-              <div className="h-[1px] w-4 bg-gold/50" />
+            <div className="flex items-center gap-1 md:gap-2">
+              <div className="h-[1px] w-3 md:w-4 bg-gold/50" />
               <span className={cn(
-                "text-[9px] md:text-[11px] tracking-[0.3em] uppercase font-bold",
+                "text-[8px] md:text-[11px] tracking-[0.2em] md:tracking-[0.3em] uppercase font-bold",
                 isScrolled ? "text-white/60" : "text-emerald-900/60"
               )}>
                 {t("nav.spiritual_healer")}
@@ -77,21 +77,21 @@ export default function Header() {
             <Link href="#testimonials" className="hover:text-gold transition-all relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] after:bg-gold hover:after:w-full after:transition-all">{t("common.stories")}</Link>
           </nav>
 
-          <div className="flex items-center space-x-3 md:space-x-5">
+          <div className="flex items-center space-x-2 md:space-x-5">
             {/* Language Switcher */}
             <div className="relative">
               <button
                 onClick={() => setIsLangOpen(!isLangOpen)}
                 className={cn(
-                  "flex items-center space-x-1 md:space-x-2 px-3 py-2 md:px-4 md:py-2.5 rounded-xl font-bold transition-all border shadow-sm text-[10px] md:text-xs uppercase tracking-widest",
+                  "flex items-center space-x-1 md:space-x-2 px-2 py-1.5 md:px-4 md:py-2.5 rounded-lg md:rounded-xl font-bold transition-all border shadow-sm text-[9px] md:text-xs uppercase tracking-widest",
                   isScrolled 
                     ? "bg-white/10 text-white border-white/20 hover:bg-white/20" 
                     : "bg-emerald-50 text-emerald-900 border-emerald-100 hover:bg-emerald-100"
                 )}
               >
-                <Globe size={14} className="text-gold" />
+                <Globe size={12} className="text-gold" />
                 <span>{languages.find(l => l.code === language)?.label}</span>
-                <ChevronDown size={12} className={cn("transition-transform", isLangOpen && "rotate-180")} />
+                <ChevronDown size={10} className={cn("transition-transform", isLangOpen && "rotate-180")} />
               </button>
 
               {isLangOpen && (
@@ -122,18 +122,18 @@ export default function Header() {
 
             <a
               href="tel:+919784412832"
-              className="flex items-center space-x-2 bg-emerald-950 hover:bg-gold text-white hover:text-emerald-950 px-4 py-2.5 md:px-7 md:py-3.5 rounded-xl font-black transition-all shadow-lg text-[11px] md:text-sm uppercase tracking-wider group"
+              className="flex items-center justify-center bg-emerald-950 hover:bg-gold text-white hover:text-emerald-950 p-2 md:px-7 md:py-3.5 rounded-lg md:rounded-xl font-black transition-all shadow-lg text-[9px] md:text-sm uppercase tracking-wider group"
             >
-              <Phone size={16} fill="currentColor" className="group-hover:scale-110 transition-transform" />
-              <span className="hidden sm:inline">{t("common.call_now")}</span>
+              <Phone size={14} fill="currentColor" className="group-hover:scale-110 transition-transform" />
+              <span className="hidden sm:inline ml-2">{t("common.call_now")}</span>
             </a>
             <a
               href="https://wa.me/919784412832"
-              className="bg-[#25D366] hover:bg-emerald-950 text-white p-2.5 md:p-3.5 rounded-xl shadow-lg transition-all flex items-center justify-center hover:rotate-[10deg] active:scale-90 border border-white/10 group"
+              className="bg-[#25D366] hover:bg-emerald-950 text-white p-2 md:p-3.5 rounded-lg md:rounded-xl shadow-lg transition-all flex items-center justify-center hover:rotate-[10deg] active:scale-90 border border-white/10 group"
               aria-label="WhatsApp"
             >
-              <div className="bg-white rounded-full p-1 group-hover:bg-[#25D366] transition-colors">
-                <svg viewBox="0 0 24 24" className="w-5 h-5 fill-[#25D366] group-hover:fill-white transition-colors" xmlns="http://www.w3.org/2000/svg">
+              <div className="bg-white rounded-full p-0.5 md:p-1 group-hover:bg-[#25D366] transition-colors">
+                <svg viewBox="0 0 24 24" className="w-4 h-4 md:w-5 md:h-5 fill-[#25D366] group-hover:fill-white transition-colors" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.353-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.136 1.36.117 1.871.05.57-.075 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.87 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                 </svg>
               </div>

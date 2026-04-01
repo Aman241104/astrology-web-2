@@ -24,7 +24,7 @@ This structure is designed for high conversion, targeting a Muslim audience seek
     - Wazifa to Get Ex Back
     - Husband-Wife Dispute Solution
     - Convince Parents for Love Marriage
-    - Intercaste Marriage Specialist
+    - Marriage Obstacles Specialist
     - Prayer for Family Peace
 - **Card Design:** Icon, Short Description, [Consult on WhatsApp] button on each card.
 

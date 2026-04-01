@@ -99,24 +99,6 @@ export default function Footer() {
         </p>
       </div>
 
-      {/* Persistent Mobile CTA Bar */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 bg-emerald-900 border-t border-gold/20 flex z-40 h-16 shadow-[0_-5px_20px_rgba(0,0,0,0.3)] rtl:flex-row-reverse">
-        <a
-          href="tel:+919784412832"
-          className="flex-1 flex flex-col items-center justify-center space-y-0.5 text-gold border-r border-gold/10 rtl:border-r-0 rtl:border-l"
-        >
-          <Phone size={20} fill="currentColor" />
-          <span className="text-[10px] font-bold uppercase tracking-widest">{t("common.call_now")}</span>
-        </a>
-        <a
-          href="https://wa.me/919784412832"
-          className="flex-1 flex flex-col items-center justify-center space-y-0.5 text-[#25D366]"
-        >
-          <MessageCircle size={20} fill="currentColor" />
-          <span className="text-[10px] font-bold uppercase tracking-widest">{t("common.whatsapp")}</span>
-        </a>
-      </div>
-
       {/* Decorative Arabesque */}
       <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/arabesque.png')] opacity-10 pointer-events-none" />
     </footer>

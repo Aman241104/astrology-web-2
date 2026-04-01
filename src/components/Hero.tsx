@@ -43,7 +43,7 @@ export default function Hero() {
   return (
     <section 
       ref={heroRef}
-      className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden bg-spiritual-dark px-4 md:px-10"
+      className="relative min-h-screen flex items-center pt-28 md:pt-32 pb-20 overflow-hidden bg-spiritual-dark px-4 md:px-10"
     >
       {/* Dynamic Background Elements */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
@@ -75,7 +75,7 @@ export default function Hero() {
           <div className="inline-flex items-center gap-2 px-6 py-2.5 bg-gold/10 rounded-full border border-gold/30 mb-8 shadow-[0_0_20px_rgba(212,175,55,0.2)]">
             <Star size={16} className="text-gold fill-gold animate-spin-slow" />
             <span className="text-gold text-xs md:text-sm font-black tracking-[0.3em] uppercase">
-              10 Times Gold Medalist Specialist
+              {t("hero.gold_medalist")}
             </span>
           </div>
 
@@ -86,7 +86,7 @@ export default function Hero() {
           </h1>
 
           <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-10">
-            {["Vashikaran", "Love Problem", "Lost Love Back", "Marriage Expert"].map((tag, i) => (
+            {["Spiritual Specialist", "Love Problem", "Lost Love Back", "Marriage Expert"].map((tag, i) => (
               <div key={i} className="px-5 py-2 bg-emerald-900/40 backdrop-blur-md border border-gold/20 rounded-2xl shadow-xl flex items-center gap-2 hover:border-gold/50 transition-colors">
                 <ShieldCheck size={14} className="text-gold" />
                 <span className="text-[10px] md:text-xs font-bold text-white uppercase tracking-widest">{tag}</span>
@@ -148,7 +148,7 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/80 via-transparent to-transparent" />
               
               {/* Overlay Badge */}
-              <div className="absolute bottom-10 left-1/2 -translate-x-1/2 bg-white p-8 rounded-[3rem] shadow-[0_30px_60px_rgba(0,0,0,0.4)] flex items-center gap-6 border-4 border-gold group-hover:scale-110 transition-transform">
+              <div className="absolute bottom-10 left-1/2 -translate-x-1/2 bg-white p-8 rounded-[3rem] shadow-[0_30px_60px_rgba(0,0,0,0.4)] flex items-center gap-6 border-4 border-gold group-hover:scale-110 transition-transform whitespace-nowrap z-20">
                  <div className="w-16 h-16 bg-gold rounded-full flex items-center justify-center text-emerald-950 shadow-inner">
                     <Heart size={32} fill="currentColor" />
                  </div>
@@ -160,10 +160,26 @@ export default function Hero() {
             </div>
 
             {/* Floating Elements */}
-            <div className="absolute -top-12 -right-12 bg-emerald-900 p-10 rounded-[4rem] shadow-2xl border-4 border-gold hidden lg:block pulse-gold">
+            <div className="absolute -top-12 -right-12 bg-emerald-900 p-10 rounded-[4rem] shadow-2xl border-4 border-gold hidden lg:block pulse-gold z-30">
                <Zap className="text-gold mb-4" size={48} fill="currentColor" />
                <p className="text-4xl font-black text-white leading-none tracking-tighter uppercase">24/7</p>
                <p className="text-sm font-bold text-gold uppercase tracking-widest">Available</p>
+            </div>
+
+            {/* Love Specialist Floating Image Card */}
+            <div className="absolute -bottom-6 -left-16 bg-white p-5 rounded-[2.5rem] shadow-2xl border-2 border-gold hidden lg:flex items-center gap-4 float-slow z-30">
+               <div className="relative w-20 h-20 rounded-2xl overflow-hidden border border-gold/20">
+                  <Image src="/husband-wife.png" alt="Love Problem Specialist" fill className="object-cover" />
+               </div>
+               <div className="pr-4">
+                  <div className="flex gap-1 mb-1 text-gold">
+                    <Heart size={12} fill="currentColor" />
+                    <Heart size={12} fill="currentColor" />
+                    <Heart size={12} fill="currentColor" />
+                  </div>
+                  <p className="text-[10px] font-black text-emerald-950 uppercase tracking-widest leading-none mb-1">Love Specialist</p>
+                  <p className="text-lg font-black text-emerald-900 uppercase tracking-tighter leading-none">100% Result</p>
+               </div>
             </div>
           </div>
         </div>
