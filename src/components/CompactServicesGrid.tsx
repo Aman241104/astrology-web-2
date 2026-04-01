@@ -27,7 +27,7 @@ export default function CompactServicesGrid() {
       title: "Breakup Problem Solution", 
       color: "bg-emerald-700", 
       desc: "Solve deep-rooted breakup issues and stop permanent separation with our expert spiritual guidance.",
-      img: "/breakup-solution.png"
+      img: "/breakup-solution-new.png"
     },
     { 
       icon: <Users size={24} fill="currentColor" />, 
@@ -48,7 +48,7 @@ export default function CompactServicesGrid() {
       title: "Family Problem Solution", 
       color: "bg-purple-700", 
       desc: "Resolve family disputes, property issues, and household tensions with pure Quranic remedies.",
-      img: "/family-conflict.png"
+      img: "/family-problem-solution.png"
     },
   ];
 
