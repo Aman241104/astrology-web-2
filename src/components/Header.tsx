@@ -62,7 +62,7 @@ export default function Header() {
                 "text-[8px] md:text-[11px] tracking-[0.2em] md:tracking-[0.3em] uppercase font-bold",
                 isScrolled ? "text-white/60" : "text-emerald-900/60"
               )}>
-                {t("nav.spiritual_healer")}
+                World Famous Love Solution Expert
               </span>
             </div>
           </Link>

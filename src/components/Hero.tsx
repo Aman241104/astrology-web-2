@@ -53,39 +53,55 @@ export default function Hero() {
             </div>
 
             <h1 className="font-serif text-4xl md:text-7xl lg:text-8xl font-black leading-[0.9] mb-4 md:mb-8 tracking-tighter text-white uppercase">
-              World Renowned <br />
-              <span className="text-gradient-gold italic pr-4">Mohammed</span> <br className="hidden md:block" />
-              <span className="text-white">Arif Khan</span>
+              Stop Your <span className="text-gradient-gold italic">Pain</span> <br />
+              <span className="text-white">Get Your Love Back</span>
             </h1>
 
             <div className="flex flex-wrap justify-center lg:justify-start gap-2 mb-6 md:mb-10">
-              {["Love Specialist", "Lost Love Back", "Marriage Expert"].map((tag, i) => (
+              {["Lost Love Specialist", "Marriage Solution", "Breakup Recovery"].map((tag, i) => (
                 <div key={i} className="px-3 py-1.5 bg-emerald-900/40 backdrop-blur-md border border-gold/20 rounded-xl shadow-xl flex items-center gap-2">
-                  <ShieldCheck size={12} className="text-gold" />
+                  <Star size={12} className="text-gold fill-gold" />
                   <span className="text-[9px] md:text-xs font-bold text-white uppercase tracking-widest">{tag}</span>
                 </div>
               ))}
             </div>
 
-            <p className="text-white/70 text-sm md:text-2xl mb-8 md:mb-12 max-w-xl leading-relaxed font-medium italic border-l-4 border-gold pl-4 md:pl-8">
-              "{t("hero.tagline")}"
+            <p className="text-white/80 text-sm md:text-2xl mb-8 md:mb-12 max-w-xl leading-relaxed font-bold italic border-l-4 border-gold pl-4 md:pl-8">
+              "Don't suffer in silence. I have helped thousands reunite with their soulmates within 24 hours. Your solution is just one call away."
             </p>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
               <a
-                href="tel:+919784412832"
-                className="w-full sm:w-auto flex items-center justify-center gap-3 bg-white text-emerald-950 px-8 py-3.5 rounded-xl font-black text-base shadow-2xl hover:bg-gold transition-all uppercase"
+                href="https://wa.me/919784412832"
+                className="w-full sm:w-auto flex items-center justify-center gap-4 bg-[#25D366] text-white px-10 py-5 rounded-2xl font-black text-xl shadow-[0_0_30px_rgba(37,211,102,0.4)] hover:scale-105 transition-all uppercase group"
               >
-                <Phone size={20} fill="currentColor" />
-                <span style={{ direction: 'ltr' }}>+91-9784412832</span>
+                <MessageCircle size={28} fill="currentColor" className="group-hover:animate-bounce" />
+                <span>Chat Now</span>
               </a>
               <a
-                href="https://wa.me/919784412832"
-                className="w-full sm:w-auto flex items-center justify-center gap-3 bg-[#25D366] text-white px-8 py-3.5 rounded-xl font-black text-base shadow-2xl hover:scale-105 transition-all uppercase"
+                href="tel:+919784412832"
+                className="w-full sm:w-auto flex items-center justify-center gap-3 bg-white text-emerald-950 px-10 py-5 rounded-2xl font-black text-xl shadow-2xl hover:bg-gold transition-all uppercase"
               >
-                <MessageCircle size={20} fill="currentColor" />
-                <span>WhatsApp Now</span>
+                <Phone size={24} fill="currentColor" />
+                <span style={{ direction: 'ltr' }}>+91-9784412832</span>
               </a>
+            </div>
+
+            {/* Trust Indicator below buttons */}
+            <div className="mt-10 flex items-center gap-4 text-white/50">
+               <div className="flex -space-x-3">
+                  {[1,2,3,4].map(i => (
+                    <div key={i} className="w-10 h-10 rounded-full border-2 border-emerald-950 bg-emerald-900 overflow-hidden relative">
+                       <Image src={`/profile-circle.png`} alt="User" fill className="object-cover" />
+                    </div>
+                  ))}
+               </div>
+               <div className="flex flex-col">
+                  <div className="flex gap-0.5">
+                     {[1,2,3,4,5].map(i => <Star key={i} size={10} className="text-gold fill-gold" />)}
+                  </div>
+                  <span className="text-[10px] uppercase font-black tracking-widest">50k+ Success Stories</span>
+               </div>
             </div>
           </div>
 
@@ -93,7 +109,7 @@ export default function Hero() {
           <div className="hero-visual relative flex justify-center order-1 lg:order-2">
             <div className="relative w-full max-w-[320px] md:max-w-[550px] aspect-square md:aspect-[4/5] rounded-[3rem] md:rounded-[5rem] overflow-hidden border-[8px] md:border-[16px] border-white/10 shadow-[0_30px_60px_rgba(0,0,0,0.6)] group">
               <Image 
-                src="/love-marriage.png" 
+                src="/get-love-back.png" 
                 alt="Love Problem Solution" 
                 fill
                 priority

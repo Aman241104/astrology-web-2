@@ -40,11 +40,11 @@ export const translations = {
       guaranteed_100: "100% Guaranteed",
     },
     nav: {
-      tagline: "!! Pick up the phone, tell your problem, get the solution !! | 24/7 Available | Islamic Spiritual Healer",
-      spiritual_healer: "Spiritual Healer",
+      tagline: "!! Pick up the phone, tell your problem, get the solution !! | 24/7 Available | World Famous Love Solution Expert",
+      spiritual_healer: "Love Solution Expert",
     },
     hero: {
-      gold_medalist: "World Famous Spiritual Specialist",
+      gold_medalist: "World Famous Love Solution Expert",
       world_renowned: "World Renowned",
       mohammed: "Mohammed",
       arif_khan: "Arif Khan",
@@ -112,7 +112,7 @@ export const translations = {
     },
     trust: {
       title: "Proven Spiritual Solutions Globally",
-      profile_status: "World Famous Specialist",
+      profile_status: "World Famous Love Solution Expert",
       gold_medalist: "( Registered Spiritual Rohani Specialist )",
       cta: "One Call Can Change Your Life",
       privacy_title: "100% Privacy",
@@ -136,7 +136,7 @@ export const translations = {
       subtitle: "CHOOSE US?",
       specialties: "Our Specialties",
       tagline: "Pure Spiritual Guidance & Guaranteed Results",
-      desc1: "The world-renowned spiritual specialist Mohammed Arif Khan is dedicated to assisting those facing life's toughest challenges. His spiritual solutions are derived from deep Quranic wisdom, offering a path to resolution that is both pure and effective.",
+      desc1: "The World Famous Love Solution Expert Mohammed Arif Khan is dedicated to assisting those facing life's toughest challenges. His spiritual solutions are derived from deep Quranic wisdom, offering a path to resolution that is both pure and effective.",
       desc2: "Whether you are struggling with marital conflicts, career setbacks, deep-rooted family issues, or lost love, Mohammed Arif Khan provides personalized Rohani Ilaj that has helped millions worldwide find peace and happiness.",
       desc3: "Our methods are 100% Halal, safe, and confidential. We believe in providing immediate relief and permanent solutions to all your worries through the power of prayer and spiritual alignment.",
       list: [
@@ -335,11 +335,11 @@ export const translations = {
       guaranteed_100: "100% गारंटीड",
     },
     nav: {
-      tagline: "!! फोन उठाएं, अपनी समस्या बताएं, समाधान पाएं !! | 24/7 उपलब्ध | इस्लामिक आध्यात्मिक चिकित्सक",
-      spiritual_healer: "आध्यात्मिक चिकित्सक",
+      tagline: "!! फोन उठाएं, अपनी समस्या बताएं, समाधान पाएं !! | 24/7 उपलब्ध | विश्व प्रसिद्ध प्रेम समस्या समाधान विशेषज्ञ",
+      spiritual_healer: "प्रेम समस्या समाधान विशेषज्ञ",
     },
     hero: {
-      gold_medalist: "विश्व प्रसिद्ध आध्यात्मिक विशेषज्ञ",
+      gold_medalist: "विश्व प्रसिद्ध प्रेम समस्या समाधान विशेषज्ञ",
       world_renowned: "विश्व प्रसिद्ध",
       mohammed: "मोहम्मद",
       arif_khan: "आरिफ खान",
@@ -630,11 +630,11 @@ export const translations = {
       guaranteed_100: "100% گارنٹی شدہ",
     },
     nav: {
-      tagline: "!! فون اٹھائیں، اپنا مسئلہ بتائیں، حل پائیں !! | 24/7 دستیاب | اسلامی روحانی معالج",
-      spiritual_healer: "روحانی معالج",
+      tagline: "!! فون اٹھائیں، اپنا مسئلہ بتائیں، حل پائیں !! | 24/7 دستیاب | محبت کے مسائل کے عالمی شہرت یافتہ ماہر",
+      spiritual_healer: "محبت کے مسائل کے ماہر",
     },
     hero: {
-      gold_medalist: "عالمی سطح پر مشہور روحانی ماہر",
+      gold_medalist: "محبت کے مسائل کے عالمی شہرت یافتہ ماہر",
       world_renowned: "دنیا بھر میں مشہور",
       mohammed: "محمد",
       arif_khan: "عارف خان",

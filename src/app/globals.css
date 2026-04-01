@@ -130,6 +130,15 @@ body {
   100% { transform: translateY(0px); }
 }
 
+@keyframes bounce-x {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(5px); }
+}
+
+.animate-bounce-x {
+  animation: bounce-x 1s infinite;
+}
+
 ::-webkit-scrollbar-track {
   background: #002b00;
 }

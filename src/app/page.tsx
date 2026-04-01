@@ -22,8 +22,8 @@ export default function Home() {
     <main className="min-h-screen bg-white">
       <Header />
       <Hero />
-      <TrustBadges />
       <CompactServicesGrid />
+      <TrustBadges />
       
       {/* Other Specialized Services Section Heading */}
       <div className="bg-white pt-20 pb-10 text-center">
