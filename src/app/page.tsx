@@ -36,8 +36,6 @@ export default function Home() {
           Other <span className="text-gradient-gold italic">Services</span>
         </h2>
       </div>
-
-      <OneClickSolutionBanner />
       <LoveProblemBanner />
       <HusbandWifeBanner />
       <ExLoveBackBanner />
