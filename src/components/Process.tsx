@@ -1,6 +1,6 @@
 "use client";
 
-import { PhoneCall, MessageSquare, HeartHandshake } from "lucide-react";
+import { PhoneCall, MessageSquare, HeartHandshake, Sparkles, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function Process() {
@@ -11,80 +11,107 @@ export default function Process() {
       title: t("process.step1_title"),
       desc: t("process.step1_desc"),
       icon: PhoneCall,
-      color: "bg-emerald-800"
+      color: "bg-emerald-800",
+      time: "Instant"
     },
     {
       title: t("process.step2_title"),
       desc: t("process.step2_desc"),
       icon: MessageSquare,
-      color: "bg-gold"
+      color: "bg-gold",
+      time: "In Depth"
     },
     {
       title: t("process.step3_title"),
       desc: t("process.step3_desc"),
       icon: HeartHandshake,
-      color: "bg-emerald-900"
+      color: "bg-emerald-900",
+      time: "Permanent"
     },
   ];
 
   return (
-    <section className="py-8 md:py-16 bg-emerald-950 text-white px-4 relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-[0.05] pointer-events-none overflow-hidden">
-        <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[800px] h-[800px] border-2 border-gold/20 rounded-full animate-pulse"></div>
-        <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[600px] h-[600px] border-2 border-gold/10 rounded-full animate-pulse"></div>
+    <section className="py-12 md:py-20 bg-emerald-950 text-white px-4 relative overflow-hidden ltr">
+      {/* Dynamic Background */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-0 left-0 w-full h-full bg-arabesque opacity-20" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(212,175,55,0.15)_0%,transparent_70%)]" />
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="text-center mb-10 md:mb-16">
-          <div className="inline-block bg-gold/10 text-gold px-4 py-1.5 rounded-full font-bold text-[10px] md:text-xs uppercase tracking-[0.3em] mb-4 border border-gold/20">
-             {t("process.subtitle")}
+        <div className="text-center mb-16 md:mb-20">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-gold/10 rounded-full border border-gold/20 mb-4">
+            <Sparkles size={14} className="text-gold" />
+            <span className="text-gold font-black uppercase tracking-[0.3em] text-[10px] md:text-xs">{t("process.subtitle")}</span>
           </div>
-          <h2 className="font-serif text-3xl md:text-5xl font-bold mb-4 uppercase tracking-tighter leading-none">
-            {t("process.title")}
+          <h2 className="font-serif text-4xl md:text-7xl font-black mb-6 uppercase tracking-tighter leading-none">
+            3 Simple <span className="text-gradient-gold italic">Steps</span>
           </h2>
-          <div className="w-16 h-1 bg-gold mx-auto" />
+          <p className="text-white/60 font-bold uppercase tracking-widest text-[10px] md:text-sm max-w-xl mx-auto">
+            Our spiritual consultation process is fast, private, and 100% effective.
+          </p>
         </div>
 
-        <div className="flex md:grid md:grid-cols-3 gap-4 md:gap-8 lg:gap-10 relative overflow-x-auto pb-6 md:pb-0 scrollbar-hide snap-x snap-mandatory px-4 -mx-4 rtl:flex-row-reverse">
-          {/* Connecting Line (Desktop) */}
-          <div className="hidden md:block absolute top-16 left-[10%] right-[10%] h-[1px] bg-gold/20 -z-10"></div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 relative">
+          {/* Animated Connecting Path (Desktop) */}
+          <div className="hidden md:block absolute top-[15%] left-[15%] right-[15%] h-[2px] border-t-2 border-dashed border-gold/30 -z-0" />
 
           {steps.map((s, i) => (
-            <div key={i} className="group flex flex-col items-center text-center p-6 md:p-8 rounded-[2rem] md:rounded-[2.5rem] bg-emerald-950/40 border border-white/5 hover:border-gold/30 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] transition-all duration-500 hover:-translate-y-2 min-w-[280px] md:min-w-0 snap-center shadow-lg relative overflow-hidden backdrop-blur-sm">
-              <div className="relative mb-6">
-                <div className={`w-16 h-16 md:w-20 md:h-20 rounded-2xl ${s.color} flex items-center justify-center relative z-10 shadow-2xl border border-white/10 group-hover:rotate-6 transition-transform duration-500 text-white`}>
-                  <s.icon size={28} className="md:w-10 md:h-10" />
+            <div key={i} className="group relative">
+              <div className="relative z-10 flex flex-col items-center text-center p-8 md:p-10 rounded-[2.5rem] bg-emerald-900/40 backdrop-blur-xl border border-white/5 hover:border-gold/40 hover:shadow-[0_30px_60px_rgba(0,0,0,0.5)] transition-all duration-700 hover:-translate-y-2">
+                
+                {/* Step Icon Container */}
+                <div className="relative mb-8">
+                  <div className={`w-20 h-20 md:w-24 md:h-24 rounded-[2rem] ${s.color} flex items-center justify-center relative z-10 shadow-2xl border-2 border-white/10 group-hover:rotate-[10deg] transition-all duration-500`}>
+                    <s.icon size={36} className="md:w-12 md:h-12 text-white" />
+                  </div>
+                  {/* Floating Number */}
+                  <div className="absolute -top-4 -right-4 w-10 h-10 bg-gold rounded-full flex items-center justify-center text-emerald-950 font-black text-lg border-4 border-emerald-950 shadow-xl group-hover:scale-110 transition-transform">
+                    {i + 1}
+                  </div>
                 </div>
+
+                <div className="mb-4 inline-block bg-white/5 px-3 py-1 rounded-full border border-white/10">
+                   <span className="text-[10px] font-black text-gold uppercase tracking-widest">{s.time}</span>
+                </div>
+
+                <h3 className="font-serif text-2xl md:text-3xl font-black text-white mb-4 uppercase tracking-tighter leading-tight group-hover:text-gold transition-colors">
+                  {s.title.split('. ')[1] || s.title}
+                </h3>
+                
+                <p className="text-sm md:text-lg text-white/60 font-medium leading-relaxed italic">
+                  {s.desc}
+                </p>
+
+                {/* Corner Decoration */}
+                <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-gold/5 to-transparent pointer-events-none" />
               </div>
 
-              <h3 className="font-serif text-xl md:text-2xl font-black text-white mb-3 uppercase tracking-tighter leading-tight group-hover:text-gold transition-colors">{s.title}</h3>
-              <p className="text-sm md:text-base text-white/60 font-medium leading-relaxed italic line-clamp-3 md:line-clamp-none">{s.desc}</p>
-              {/* Step Number Badge */}
-              <div className="absolute top-2 right-4 text-4xl md:text-6xl font-black text-white/5 group-hover:text-gold/10 transition-colors pointer-events-none rtl:right-auto rtl:left-4">
-                0{i + 1}
-              </div>
+              {/* Mobile Arrow */}
+              {i < 2 && (
+                <div className="flex md:hidden justify-center my-4 animate-bounce">
+                  <ArrowRight size={32} className="text-gold rotate-90" />
+                </div>
+              )}
             </div>
           ))}
         </div>
 
-        {/* Compact CTA for Process Section */}
-        <div className="mt-12 text-center border-t border-white/10 pt-10">
-           <p className="text-gold font-bold uppercase tracking-[0.2em] text-[10px] mb-6">{t("process.cta_text")}</p>
-           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 rtl:flex-row-reverse">
-              <a
-                href="https://wa.me/919784412832"
-                className="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#25D366] hover:bg-white text-white hover:text-[#25D366] px-8 py-3.5 rounded-xl font-black text-base transition-all shadow-lg group rtl:flex-row-reverse"
-              >
-                <span>{t("common.start_consultation")}</span>
-              </a>
-              <a
-                href="tel:+919784412832"
-                className="w-full sm:w-auto flex items-center justify-center gap-2 bg-white/10 hover:bg-gold text-white hover:text-emerald-950 px-8 py-3.5 rounded-xl font-black text-base transition-all border border-white/10 rtl:flex-row-reverse"
-              >
-                <PhoneCall size={18} />
-                <span>{t("common.call_specialist")}</span>
-              </a>
+        {/* Journey Completion CTA */}
+        <div className="mt-16 text-center border-t border-white/10 pt-12">
+           <div className="inline-flex flex-col sm:flex-row items-center gap-6 p-2 bg-white/5 backdrop-blur-md rounded-3xl border border-white/10 pr-8 sm:pr-12 group hover:bg-white/10 transition-all">
+              <div className="w-16 h-16 bg-gold rounded-2xl flex items-center justify-center text-emerald-950 shadow-xl group-hover:rotate-6 transition-transform">
+                 <Sparkles size={32} fill="currentColor" />
+              </div>
+              <div className="text-left">
+                 <p className="text-gold font-black uppercase tracking-[0.2em] text-[10px] mb-1">{t("process.cta_text")}</p>
+                 <a 
+                   href="https://wa.me/919784412832"
+                   className="text-xl md:text-3xl font-black text-white hover:text-gold transition-colors tracking-tighter uppercase flex items-center gap-3"
+                 >
+                   Start Your Healing Now <ArrowRight size={24} />
+                 </a>
+              </div>
            </div>
         </div>
       </div>
