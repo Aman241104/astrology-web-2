@@ -15,7 +15,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Mohammed Arif Khan | World Famous Love Solution Expert",
-  description: "Get Pure Halal Islamic spiritual remedies for love marriage, husband-wife disputes, and family problems. 24/7 available for Rohani Ilaj.",
+  description: "Get Pure Halal Islamic spiritual remedies for love marriage, husband-wife problems, and family issues. 24/7 available for Rohani Ilaj.",
 };
 
 import { LanguageProvider } from "@/context/LanguageContext";
@@ -30,7 +30,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Mohammed Arif Khan - World Famous Love Solution Expert",
-    "description": "Expert Islamic spiritual solutions for love problems, marriage disputes, and family issues. Pure Halal and Quranic remedies.",
+    "description": "Expert Islamic spiritual solutions for love problems, marriage issues, and family problems. Pure Halal and Quranic remedies.",
     "url": "https://yourdomain.com",
     "telephone": "+919784412832",
     "areaServed": ["IN", "UK", "US", "AE", "CA"],

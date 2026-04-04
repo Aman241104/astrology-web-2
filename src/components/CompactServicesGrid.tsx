@@ -47,7 +47,7 @@ export default function CompactServicesGrid() {
       icon: <Zap size={24} fill="currentColor" />, 
       title: "Family Problem Solution", 
       color: "bg-purple-700", 
-      desc: "Resolve family disputes, property issues, and household tensions with pure Quranic remedies.",
+      desc: "Resolve family issues, property concerns, and household tensions with pure Quranic remedies.",
       img: "/family-problem-solution.png"
     },
   ];

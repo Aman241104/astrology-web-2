@@ -5,7 +5,7 @@ import { CheckCircle2, XCircle, Info } from "lucide-react";
 export default function ComparisonTable() {
   const rows = [
     { label: "Quranic & Halal Remedies", hazrat: "Pure Rohani Ilaj", others: "Doubtful Methods" },
-    { label: "Confidentiality", hazrat: "100% Private", others: "Risk of Leak" },
+    { label: "Confidentiality", hazrat: "Fully Private", others: "Risk of Leak" },
     { label: "Consultation Fee", hazrat: "Free Initial Advice", others: "High Demands" },
     { label: "Effective Outcomes", hazrat: "Proven Results", others: "Generic Advice" },
   ];

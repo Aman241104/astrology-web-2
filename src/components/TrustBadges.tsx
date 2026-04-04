@@ -5,14 +5,14 @@ import { Star, ShieldCheck, Globe, Clock, Lock, Zap } from "lucide-react";
 export default function TrustBadges() {
   const badges = [
     { icon: <Clock size={40} className="text-gold" />, title: "25+ Years Exp", desc: "Global Service" },
-    { icon: <Lock size={40} className="text-gold" />, title: "100% Privacy", desc: "Full Confidentiality" },
+    { icon: <Lock size={40} className="text-gold" />, title: "Full Privacy", desc: "Full Confidentiality" },
     { icon: <Globe size={40} className="text-gold" />, title: "Global Presence", desc: "Serving 25+ Countries" },
     { icon: <Star size={40} className="text-gold" />, title: "4.9/5 Rating", desc: "By 100k+ Clients" },
   ];
 
   const secondaryBadges = [
-    { icon: <ShieldCheck size={24} className="text-gold" />, title: "100% Sharia Compliant" },
-    { icon: <Lock size={24} className="text-gold" />, title: "100% Private" },
+    { icon: <ShieldCheck size={24} className="text-gold" />, title: "Pure Sharia Compliant" },
+    { icon: <Lock size={24} className="text-gold" />, title: "Fully Private" },
     { icon: <Zap size={24} className="text-gold" />, title: "Immediate Help" },
   ];
 

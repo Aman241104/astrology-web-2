@@ -42,7 +42,7 @@ export default function WhyChoose() {
                   <span className="font-black text-white uppercase tracking-tight text-lg md:text-xl block leading-none mb-1">
                     {item}
                   </span>
-                  <span className="text-[10px] text-gold font-bold uppercase tracking-widest opacity-60">Guaranteed Result</span>
+                  <span className="text-[10px] text-gold font-bold uppercase tracking-widest opacity-60">Proven Result</span>
                 </div>
                 <div className="absolute top-4 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
                    <Zap size={16} className="text-gold fill-gold" />
@@ -78,7 +78,7 @@ export default function WhyChoose() {
 
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-12">
                     {[
-                      { icon: ShieldCheck, label: "100% Halal" },
+                      { icon: ShieldCheck, label: "Pure Halal" },
                       { icon: Heart, label: "Private" },
                       { icon: Zap, label: "Fast Help" }
                     ].map((feat, i) => (

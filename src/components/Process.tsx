@@ -48,7 +48,7 @@ export default function Process() {
             3 Simple <span className="text-gradient-gold italic">Steps</span>
           </h2>
           <p className="text-white/60 font-bold uppercase tracking-widest text-[10px] md:text-sm max-w-xl mx-auto">
-            Our spiritual consultation process is fast, private, and 100% effective.
+            Our spiritual consultation process is fast, private, and highly effective.
           </p>
         </div>
 

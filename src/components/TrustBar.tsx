@@ -13,8 +13,8 @@ export default function TrustBar() {
           </div>
         </div>
       ),
-      title: "100% Privacy",
-      sub: "Full Confidentiality Guaranteed",
+      title: "Full Privacy",
+      sub: "Full Confidentiality Maintained",
     },
     {
       icon: <ShieldCheck className="text-emerald-950" size={32} />,

@@ -14,7 +14,7 @@ export default function ExLoveBackBanner() {
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
             <div className="flex items-center gap-2 mb-4 md:mb-6">
               <div className="w-8 md:w-12 h-1 bg-gold rounded-full" />
-              <span className="text-gold text-[9px] md:text-xs font-black uppercase tracking-[0.3em]">Quick Results Guaranteed</span>
+              <span className="text-gold text-[9px] md:text-xs font-black uppercase tracking-[0.3em]">Fast Effective Results</span>
             </div>
 
             <h2 className="text-4xl md:text-7xl font-black text-white uppercase leading-[0.9] mb-6 md:mb-8 tracking-tighter">
